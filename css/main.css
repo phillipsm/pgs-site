@@ -38,7 +38,8 @@ p {
 }
 
 p:last-of-type {
-  margin-bottom: 6rem;
+  margin-bottom: 2rem;
+  margin-top: 9rem;
 }
 
 a:link    { color: #e33c1c }
@@ -93,7 +94,7 @@ a:hover   { color: #e33c1c }
   }
 
   p:last-of-type {
-    margin-bottom: 3rem;
-    margin-top: 23rem;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
   }
 }
