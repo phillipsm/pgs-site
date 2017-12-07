@@ -94,5 +94,6 @@ a:hover   { color: #e33c1c }
 
   p:last-of-type {
     margin-bottom: 3rem;
+    margin-top: 23rem;
   }
 }
