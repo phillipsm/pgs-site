@@ -94,7 +94,7 @@ a:hover   { color: #e33c1c }
   }
 
   p:last-of-type {
-    margin-top: 6rem;
-    margin-bottom: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
   }
 }
