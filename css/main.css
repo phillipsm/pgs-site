@@ -19,12 +19,26 @@ h1 {
   font-weight: 400;
   margin-top: 8rem;
   letter-spacing: .035em;
-  padding-bottom: 3rem;
+  padding-bottom: 4rem;
+}
+
+h2 {
+  margin-top: 4rem;
+  margin-bottom: -1rem;
+  font-family: 'Cabin', sans-serif;
+  font-size: 2em;
+  font-weight: 300;
+}
+
+h2.subhead {
+  margin-top: -4rem;
+  margin-bottom: 5rem;
+
 }
 
 hr {
   border-top: 2px solid #222;
-  max-width: 60px;
+  max-width: 50px;
   margin: 0;
 }
 
@@ -39,7 +53,6 @@ p {
 
 p:last-of-type {
   margin-bottom: 2rem;
-  margin-top: 9rem;
 }
 
 a:link    { color: #e33c1c }
