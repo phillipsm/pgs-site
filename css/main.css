@@ -96,6 +96,18 @@ a:hover   { color: #e33c1c }
     padding-bottom: 2rem;
   }
 
+  h2 {
+    margin-top: 3rem;
+    margin-bottom: -1rem;
+    font-size: 1.8em;
+    font-weight: 300;
+  }
+
+  h2.subhead {
+    margin-top: -2rem;
+    margin-bottom: 3rem;
+  }
+
   hr {
     border-top: 1.4px solid #222;
     max-width: 50px;
@@ -107,7 +119,6 @@ a:hover   { color: #e33c1c }
   }
 
   p:last-of-type {
-    margin-top: 3rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 }
