@@ -59,6 +59,18 @@ a:link    { color: #e33c1c }
 a:visited { color: #e33c1c }
 a:hover   { color: #e33c1c }
 
+h1 a:link {
+  color: #222;
+}
+
+h1 a:visited {
+  color: #222
+}
+
+h1 a:hover {
+  text-decoration: underline;
+  text-decoration-color: #e33c1c;
+}
 ::selection {
     background-color: #e7563a;
     color: #fff;
