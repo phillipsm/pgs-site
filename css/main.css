@@ -28,6 +28,7 @@ h2 {
   font-family: 'Cabin', sans-serif;
   font-size: 2em;
   font-weight: 300;
+  letter-spacing: .02em
 }
 
 h2.subhead {
