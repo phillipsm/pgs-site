@@ -12,15 +12,16 @@ html {
   font-size: 13px;
 }
 
-.body-container {
+.body-container, .contact-footer {
     max-width: 800px;
     margin: auto;
 }
 
 body {
-  background-color: #daf0ff;
+  /* background-color: #daf0ff; */
+  background-color: #15133f;
   text-align: left;
-  color: #222;
+  color: #15133f;
   font-size: 2em;
   font-family: 'Walsheim Regular', sans-serif;
 }
@@ -28,10 +29,9 @@ body {
 .color-wrapper {
   background-color: #fff;
   min-height: 100vh;
+  padding-bottom: 20rem;
 }
 
-.container {
-}
 
 h1 {
   font-family: 'Walsheim Medium', sans-serif;
@@ -62,41 +62,13 @@ a:link    { color: #e33c1c }
 a:visited { color: #e33c1c }
 a:hover   { color: #e33c1c }
 
-h1 a:link {
-  color: #222;
+.img-desc {
+  font-size: 1.4rem;
+  max-width: 22rem;
 }
 
-h1 a:visited {
-  color: #222
-}
-
-h1 a:hover {
-  text-decoration: underline;
-  text-decoration-color: #e33c1c;
-}
-::selection {
-    background-color: #e7563a;
-    color: #fff;
-}
-
-::-moz-selection {
-    background-color: #e7563a;
-    color: #fff;
-}
-
-::-o-selection {
-    background-color: #e7563a;
-    color: #fff;
-}
-
-::-ms-selection {
-    background-color: #e7563a;
-    color: #fff;
-}
-
-::-webkit-selection {
-    background-color: #e7563a;
-    color: #fff;
+.desc-container {
+  text-align: right;
 }
 
 @media (max-width: 600px) {
@@ -117,44 +89,23 @@ h1 a:hover {
     font-size: 1.8em;
   }
 
-  h2.subhead {
-    margin-top: -2rem;
-    margin-bottom: 3rem;
-  }
-
-  hr {
-    border-top: 1.4px solid #222;
-    max-width: 50px;
-  }
-
-  p {
-    font-size: 1.2em;
-    letter-spacing: .02em;
-  }
-
-  p:last-of-type {
-    margin-bottom: 2rem;
-  }
-}
-
-
-img {
-  max-height: 50rem;
-  margin-top: 2rem;
-}
-
-.logo {
-  max-height:10rem;
-  margin: 0 auto;
 }
 
 .product-desc p {
   font-size: .75em;
   max-width: 21rem;
-
 }
 
-.product-desc p:first-of-type {
-  font-size: 1em;
-  margin-top: 0;
+.contact-footer {
+  background-color: #15133f;
+  font-size: 1.4rem;
+  text-align: right;
+}
+
+.contact-footer p {
+  color: #fff;
+}
+
+.contact-footer a {
+  color: #fff;
 }
