@@ -14,14 +14,13 @@ html {
 
 .body-container, .contact-footer {
     max-width: 800px;
-    margin: auto;
 }
 
 body {
   /* background-color: #daf0ff; */
   background-color: #15133f;
   text-align: left;
-  color: #15133f;
+  color: #000;
   font-size: 2em;
   font-family: 'Walsheim Regular', sans-serif;
 }
@@ -29,15 +28,15 @@ body {
 .color-wrapper {
   background-color: #fff;
   min-height: 100vh;
-  padding-bottom: 20rem;
+  padding-bottom: 10rem;
 }
 
-
-h1 {
+.highlight-inline:first-of-type {
   font-family: 'Walsheim Medium', sans-serif;
-  font-size: 2.5em;
-  margin-top: 8rem;
-  padding-bottom: 4rem;
+}
+
+.highlight-inline {
+  color: #e33c1c;
 }
 
 h2 {
@@ -47,20 +46,17 @@ h2 {
   font-size: 2em;
 }
 
-
-
 p {
   max-width: 23em;
   margin: 1.5rem 0;
 }
 
-p:last-of-type {
-  margin-bottom: 2rem;
+a:link  {
+  color: #000;
+  text-decoration: underline;
 }
-
-a:link    { color: #e33c1c }
-a:visited { color: #e33c1c }
-a:hover   { color: #e33c1c }
+a:visited { color: #000 }
+a:hover   { color: #555 }
 
 .img-desc {
   font-size: 1.4rem;
@@ -71,22 +67,24 @@ a:hover   { color: #e33c1c }
   text-align: right;
 }
 
+.prod-title {
+  margin-top: 0;
+  padding-top: 0;
+}
+
 @media (max-width: 600px) {
-  .container {
-    margin-left: 0;
+  .color-wrapper {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
-  h1 {
-    font-size: 2.4em;
-    margin-top: 5rem;
-    letter-spacing: .02em;
-    padding-bottom: 2rem;
+  html {
+    font-size: 10px;
   }
 
-  h2 {
-    margin-top: 3rem;
-    margin-bottom: -1rem;
-    font-size: 1.8em;
+  .img-desc {
+    font-size: 1.5rem;
+    max-width: 22rem;
   }
 
 }
@@ -108,4 +106,13 @@ a:hover   { color: #e33c1c }
 
 .contact-footer a {
   color: #fff;
+}
+
+.section-start {
+  padding-top: 5rem;
+}
+
+.logo{
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
