@@ -12,13 +12,14 @@ html {
   font-size: 13px;
 }
 
-.body-container, .contact-footer {
-    max-width: 800px;
+.container, .contact-footer {
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 body {
-  /* background-color: #daf0ff; */
-  background-color: #15133f;
+  background-color: #b6e2e9;
   text-align: left;
   color: #000;
   font-size: 2em;
@@ -29,6 +30,8 @@ body {
   background-color: #fff;
   min-height: 100vh;
   padding-bottom: 10rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .highlight-inline:first-of-type {
@@ -36,7 +39,7 @@ body {
 }
 
 .highlight-inline {
-  color: #e33c1c;
+  color: #ee2348;
 }
 
 h2 {
@@ -67,17 +70,16 @@ a:hover   { color: #555 }
   text-align: right;
 }
 
+.desc-container.rollout {
+  float: right;
+}
+
 .prod-title {
   margin-top: 0;
   padding-top: 0;
 }
 
-@media (max-width: 600px) {
-  .color-wrapper {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
+@media (max-width: 576px) {
   html {
     font-size: 10px;
   }
@@ -87,6 +89,25 @@ a:hover   { color: #555 }
     max-width: 22rem;
   }
 
+  .prod-title {
+    margin-top: 1rem;
+  }
+
+  .desc-container {
+    text-align: left;
+  }
+
+  .logo {
+    padding-left: 0;
+  }
+
+  .desc-container.rollout {
+    float: left;
+  }
+
+  .contact-footer p{
+      padding-right: 2rem;
+  }
 }
 
 .product-desc p {
@@ -95,21 +116,14 @@ a:hover   { color: #555 }
 }
 
 .contact-footer {
-  background-color: #15133f;
+  background-color: #b6e2e9;
   font-size: 1.4rem;
   text-align: right;
-}
-
-.contact-footer p {
-  color: #fff;
-}
-
-.contact-footer a {
-  color: #fff;
+  padding-right: 2rem;
 }
 
 .section-start {
-  padding-top: 5rem;
+  padding-top:6rem;
 }
 
 .logo{
