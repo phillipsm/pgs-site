@@ -42,13 +42,6 @@ body {
   color: #ee2348;
 }
 
-h2 {
-  margin-top: 4rem;
-  margin-bottom: -1rem;
-  font-family: 'Walsheim Medium', sans-serif;
-  font-size: 2em;
-}
-
 p {
   max-width: 23em;
   margin: 1.5rem 0;
@@ -79,6 +72,11 @@ a:hover   { color: #555 }
   padding-top: 0;
 }
 
+.middle-product {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 @media (max-width: 576px) {
   html {
     font-size: 10px;
@@ -107,6 +105,10 @@ a:hover   { color: #555 }
 
   .contact-footer p{
       padding-right: 2rem;
+  }
+
+  .middle-product {
+    padding: 0;
   }
 }
 
