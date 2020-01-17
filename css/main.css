@@ -13,7 +13,6 @@ html {
 }
 
 .container, .contact-footer {
-    max-width: 750px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -29,9 +28,9 @@ body {
 .color-wrapper {
   background-color: #fff;
   min-height: 100vh;
-  padding-bottom: 10rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 12rem;
 }
 
 .highlight-inline:first-of-type {
@@ -43,13 +42,13 @@ body {
 }
 
 p {
-  max-width: 23em;
+  max-width: 21em;
   margin: 1.5rem 0;
 }
 
 a:link  {
   color: #000;
-  text-decoration: underline;
+
 }
 a:visited { color: #000 }
 a:hover   { color: #555 }
@@ -57,29 +56,51 @@ a:hover   { color: #555 }
 .img-desc {
   font-size: 1.4rem;
   max-width: 22rem;
+  margin-left: 17rem;
 }
 
-.desc-container {
-  text-align: right;
+.btn {
+    background-color: #ee2348;
+    color: #fff;
+    border-radius: 0;
+    text-decoration: none;
+    font-size: 1.4rem;
+    padding: .5em 1em;
+    margin-top: .5em;
 }
 
-.desc-container.rollout {
-  float: right;
+.img-desc .btn {
+    color: #fff;
 }
 
-.prod-title {
-  margin-top: 0;
-  padding-top: 0;
+.btn a:visited {
+    color: #fff;
 }
 
-.middle-product {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+.logo {
+    max-height: 20rem;
+}
+
+.contact-footer {
+    margin: 5rem 0;
+}
+
+ul {
+    list-style: none;
 }
 
 @media (max-width: 576px) {
   html {
     font-size: 10px;
+  }
+
+  .color-wrapper {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  p {
+    max-width: none;
   }
 
   .img-desc {
@@ -95,40 +116,22 @@ a:hover   { color: #555 }
     text-align: left;
   }
 
-  .logo {
-    padding-left: 0;
-  }
-
   .desc-container.rollout {
     float: left;
   }
 
-  .contact-footer p{
-      padding-right: 2rem;
+  .contact-footer {
+      margin: 2rem 0;
   }
 
-  .middle-product {
-    padding: 0;
-  }
-}
-
-.product-desc p {
-  font-size: .75em;
-  max-width: 21rem;
+  
 }
 
 .contact-footer {
   background-color: #b6e2e9;
   font-size: 1.4rem;
-  text-align: right;
-  padding-right: 2rem;
 }
 
 .section-start {
   padding-top:6rem;
-}
-
-.logo{
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
