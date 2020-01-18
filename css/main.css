@@ -47,10 +47,10 @@ p {
 }
 
 a:link  {
-  color: #000;
+  color: #fff;
 
 }
-a:visited { color: #000 }
+a:visited { color: #fff }
 a:hover   { color: #555 }
 
 .img-desc {
@@ -69,7 +69,7 @@ a:hover   { color: #555 }
     margin-top: .5em;
 }
 
-.img-desc .btn {
+.btn a {
     color: #fff;
 }
 
@@ -78,7 +78,7 @@ a:hover   { color: #555 }
 }
 
 .logo {
-    max-height: 20rem;
+    max-height: 14rem;
 }
 
 .contact-footer {
@@ -124,7 +124,7 @@ ul {
       margin: 2rem 0;
   }
 
-  
+
 }
 
 .contact-footer {
