@@ -25,7 +25,7 @@ body {
   max-width: 1100px;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(8, auto);
+  grid-template-rows: repeat(16, auto);
   background-color: #fff;
   color: #444;
   margin: 0 auto;
@@ -41,18 +41,27 @@ img {
     font-size: 2rem;
 }
 
-.a {
+
+
+/***********
+Grid positioning
+organized by page.
+***********/
+
+/* index */
+
+.index-page .a {
     grid-column: 1 / span 4;
     grid-row: 1 / span 1;
     min-width: 35rem;
 }
 
-.b {
+.index-page .b {
     grid-column: 1 / span 10;
     grid-row: 2 / span 1;
 }
 
-.b img {
+.index-page .b img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -60,37 +69,153 @@ img {
 }
 
 
-.c {
+.index-page .c {
     grid-column: 1 / span 10;
     grid-row: 3 / span 1;
 }
 
-.d {
+.index-page .d {
     grid-column: 3 / span 3;
     grid-row: 4 / span 1;
 }
 
-.e {
+.index-page .e {
     grid-column: 1 / span 10;
     grid-row: 5 / span 1;
 }
 
-.e img {
+.index-page .e img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
 }
 
-.f {
+.index-page .f {
     grid-column: 1 / span 10;
     grid-row: 6 / span 1;
 }
 
-.g {
+.index-page .g {
     grid-column: 3 / span 3;
     grid-row: 7 / span 1;
 }
+
+/* /index */
+
+
+/* services */
+
+.services-page .a {
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 1;
+    min-width: 35rem;
+}
+
+.services-page .b {
+    grid-column: 1 / span 5;
+    grid-row: 2 / span 1;
+}
+
+.services-page .b img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.services-page .c {
+    grid-column: 6 / span 5;
+    grid-row: 2 / span 1;
+}
+
+.services-page .c img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.services-page .d {
+    grid-column: 1 / span 10;
+    grid-row: 3 / span 1;
+}
+
+.services-page .e {
+    grid-column: 3 / span 3;
+    grid-row: 4 / span 1;
+}
+
+.services-page .f {
+    grid-column: 1 / span 5;
+    grid-row: 5 / span 1;
+}
+
+.services-page .f img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.services-page .g {
+    grid-column: 6 / span 5;
+    grid-row: 5 / span 1;
+}
+
+.services-page .g img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.services-page .h {
+    grid-column: 1 / span 10;
+    grid-row: 6 / span 1;
+}
+
+.services-page .i {
+    grid-column: 3 / span 3;
+    grid-row: 7 / span 1;
+}
+
+.services-page .j {
+    grid-column: 1 / span 5;
+    grid-row: 8 / span 1;
+}
+
+.services-page .j img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.services-page .k {
+    grid-column: 6 / span 5;
+    grid-row: 8 / span 1;
+}
+
+.services-page .k img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.services-page .l {
+    grid-column: 1 / span 10;
+    grid-row: 9 / span 1;
+}
+
+.services-page .m {
+    grid-column: 3 / span 3;
+    grid-row: 10 / span 1;
+}
+
+/* /services */
+
 
 footer .link-container {
     grid-column: 9 / span 2;
@@ -142,6 +267,10 @@ a:hover   { color: #555 }
 
 ul {
     list-style: none;
+}
+
+footer {
+    margin-top: 12rem;
 }
 
 @media (max-width: 576px) {
