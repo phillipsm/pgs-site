@@ -1,0 +1,148 @@
+/* services */
+
+.container {
+  max-width: 1100px;
+  display: grid;
+  grid-column-gap: 1em;
+  grid-row-gap: 2em;
+  background-color: #fff;
+  color: #444;
+  margin: 0 auto;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-areas:
+  "intro-text intro-text intro-text intro-text . . . ."
+  ". . . . . . . ."
+  ". . . . . . . ."
+  "screens-img-a screens-img-a screens-img-a screens-img-a screens-img-a screens-desc screens-desc ."
+  "screens-img-a screens-img-a screens-img-a screens-img-a screens-img-a screens-desc screens-desc ."
+  "screens-img-b screens-img-b screens-img-b screens-img-b screens-img-b . . ."
+  "screens-img-b screens-img-b screens-img-b screens-img-b screens-img-b . . ."
+  "screens-img-c screens-img-c screens-img-c screens-img-c screens-img-c . . ."
+  "screens-img-c screens-img-c screens-img-c screens-img-c screens-img-c . . ."
+  ". . . . . . . ."
+  ". . . . . . . ."
+  "cnc-img-a cnc-img-a cnc-img-a cnc-img-a cnc-img-a cnc-desc cnc-desc ."
+  "cnc-img-a cnc-img-a cnc-img-a cnc-img-a cnc-img-a cnc-desc cnc-desc ."
+  "cnc-img-b cnc-img-b cnc-img-b cnc-img-b cnc-img-b . . ."
+  "cnc-img-b cnc-img-b cnc-img-b cnc-img-b cnc-img-b . . ."
+  ". . . . . . . ."
+  ". . . . . . . ."
+  "ba-img-a ba-img-a ba-img-a ba-img-a ba-img-a ba-desc ba-desc ."
+  "ba-img-a ba-img-a ba-img-a ba-img-a ba-img-a ba-desc ba-desc ."
+  "ba-img-b ba-img-b ba-img-b ba-img-b ba-img-b . . ."
+  "ba-img-b ba-img-b ba-img-b ba-img-b ba-img-b . . ."
+  "ba-img-c ba-img-c ba-img-c ba-img-c ba-img-c . . ."
+  ". . . . . . . ."
+  ". . . . . . . ."
+  "enclo-img-a enclo-img-a enclo-img-a enclo-img-a enclo-img-a enclo-desc enclo-desc ."
+  "enclo-img-a enclo-img-a enclo-img-a enclo-img-a enclo-img-a enclo-desc enclo-desc ."
+  "enclo-img-b enclo-img-b enclo-img-b enclo-img-b enclo-img-b . . ."
+  "enclo-img-b enclo-img-b enclo-img-b enclo-img-b enclo-img-b . . ."
+  "enclo-img-c enclo-img-c enclo-img-c enclo-img-c enclo-img-c . . ."
+
+
+
+    ;
+}
+
+
+
+.intro-text {
+    min-width: 35rem;
+    grid-area: intro-text;
+}
+
+.intro-sketch {
+    grid-area: intro-sketch;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+a:link {
+    color: #ee2348;
+    text-decoration: none;
+}
+a:visited {
+    color: #ee2348;
+}
+
+canvas{
+  width: 100%;
+}
+
+.highlight-inline-landing {
+    color: #ee2348;
+}
+
+.highlight-inline-landing:hover {
+    text-decoration: underline;
+}
+
+
+.screens-desc {
+    grid-area: screens-desc;
+}
+
+.screens-img-a {
+    grid-area: screens-img-a;
+}
+
+.screens-img-b {
+    grid-area: screens-img-b;
+}
+
+.screens-img-c {
+    grid-area: screens-img-c;
+}
+
+
+.cnc-desc {
+    grid-area: cnc-desc;
+}
+
+.cnc-img-a {
+    grid-area: cnc-img-a;
+}
+
+.cnc-img-b {
+    grid-area: cnc-img-b;
+}
+
+
+.ba-desc {
+    grid-area: ba-desc;
+}
+
+.ba-img-a {
+    grid-area: ba-img-a;
+}
+
+.ba-img-b {
+    grid-area: ba-img-b;
+}
+
+.ba-img-c {
+    grid-area: ba-img-c;
+}
+
+
+.enclo-desc {
+    grid-area: enclo-desc;
+}
+
+.enclo-img-a {
+    grid-area: enclo-img-a;
+}
+
+.enclo-img-b {
+    grid-area: enclo-img-b;
+}
+
+.enclo-img-c {
+    grid-area: enclo-img-c;
+}

@@ -1,0 +1,64 @@
+/***********
+landing page styling
+***********/
+
+.container {
+  max-width: 1100px;
+  display: grid;
+  grid-column-gap: 1em;
+  grid-row-gap: 2em;
+  background-color: #fff;
+  color: #444;
+  margin: 0 auto;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-areas:
+    "intro-text intro-text intro-text intro-text . . . ."
+    "svc-img svc-img svc-img svc-img svc-img svc-img svc-img svc-img"
+    "svc-title svc-desc svc-desc . . . . ."
+    "goods-img goods-img goods-img goods-img goods-img goods-img goods-img goods-img"
+    "goods-title goods-desc goods-desc . . . . ."
+    ". . . . . . footer-logo footer-nav";
+}
+
+.intro-text {
+    min-width: 35rem;
+    grid-area: intro-text;
+}
+
+.svc-img {
+    grid-area: svc-img;
+}
+
+.svc-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.svc-title {
+    grid-area: svc-title;
+}
+
+.svc-desc {
+    grid-area: svc-desc;
+}
+
+.goods-img {
+    grid-area: goods-img;
+}
+
+.goods-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.goods-title {
+    grid-area: goods-title;
+}
+
+.goods-desc {
+    grid-area: goods-desc;
+}
