@@ -10,16 +10,18 @@
     <meta name="author" content="Public Good Studio">
 
     <link rel="canonical" href="https://publicgood.studio">
-    <link rel="icon" href="favicon.ico">
-    <link rel="apple-touch-icon-precomposed" href="img/favicon-152.png">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="/img/favicon-152.png">
     <meta name="msapplication-TileColor" content="#FFFFFF">
-    <meta name="msapplication-TileImage" content="img/favicon-144.png">
+    <meta name="msapplication-TileImage" content="/img/favicon-144.png">
 
     <link href="css/main.css" rel="stylesheet">
     <link href="css/services.css" rel="stylesheet">
 
     <script src="/js/vendor/p5.min.js"></script>
     <script src="/js/bars.js"></script>
+    <script src="/js/sink.js"></script>
+    <script src="/js/monday.js"></script>
 
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110979652-1"></script>
@@ -51,23 +53,28 @@
         <div class="screens-desc">
             <p class="body-text">Pattern making</p>
             <p>wrapping moving images across displays. Creating gifs and
-            <p>JavaScript. Algorithmic art. Generative art. Storefront displays. Background art. Adobe Illustrator and Photoshop.</p>
+            <p>JavaScript. Algorithmic art. Generative art. Storefront disp lays. Background art. Adobe Illustrator and Photoshop.</p>
         </div>
 
-        <div class="screens-img-a" id="canvas-container-a"></div>
+        <div class="screens-img-a">
+            <div id="canvas-container-a"></div>
+            <p class="img-desc">An accretion of small, random lines.<!--<a href="/patterns/sink.html" target="_blank">View fullscreen.</a>--></p>
+        </div>
         <div class="screens-img-b">
-            <img src="img/machine-long-view-web.jpg">
+            <div id="canvas-container-b"></div>
+            <p class="img-desc">Stacked vertical boxes that light up. <!--<a href="/patterns/bars.html" target="_blank">View fullscreen.</a>--></p>
         </div>
         <div class="screens-img-c">
-            <img src="img/machine-long-view-web.jpg">
+            <div id="canvas-container-c"></div>
+            <p class="img-desc">A scrolling message in a field of noise. <!--<a href="/patterns/monday.html" target="_blank">View fullscreen.</a>--></p>
         </div>
         <!-- / screens and backgrounds section -->
 
         <!-- cnc routing section -->
         <div class="cnc-desc">
-            <p class="body-text">Large format CNC routing</p>
-            <p>The CNC mill let's us run a lean and capable shop. It's a big machine! It can precisely mill objects as large as 8 feet wide by 14 feet long.</p>
-            <p>Most large sheets of plywood and plastic work well in the machine. It lived in a sign shop before we repurposed it for OpenBooth production.</p>
+            <p class="body-text">CNC routing</p>
+            <p>The CNC mill let's us run a lean and capable shop. It's a big machine, it can precisely mill sheets of wood and plastic as big as 8 feet wide by 14 feet long.</p>
+            <p>It lived in a sign shop before we repurposed it for <a href="https://OpenBooth.store" target="_blank">OpenBooth</a> production.</p>
             <p>We can help you create CAD/CAM designs, or you can supply your own. </p>
         </div>
 
@@ -87,28 +94,9 @@
         </div>
 
         <div class="ba-img-a">
-            <img src="img/stereo-cam-proj.jpg">
-        </div>
-        <div class="ba-img-b">
-            <img src="img/table-green.gif">
-        </div>
-        <div class="ba-img-c">
-            <img src="img/shopping.gif">
-        </div>
-        <!-- / bits and atoms section -->
-
-        <!-- enclosures section -->
-        <div class="enclo-desc">
-            <p class="body-text">Architectural features and enclosures</p>
-            <p>Do you have an idea that you'd like to hold in your hand? A wild, new piece of furniture you'd like to experience in the real world?</p>
-            <p>Ideation. Sketching. Prototyping. Dreaming. 3D modeling in SolidWorks. Milling wood and plastic for fabrication. Art direction. Physical and digital interfaces supported by modern software systems. Acoustically sensitive enclosures and spaces.</p>
-        </div>
-
-        <div class="enclo-img-a">
             <img src="img/safe-comfortable.jpg">
         </div>
-
-        <!-- / enclosures section -->
+        <!-- / bits and atoms section -->
 
 
 
@@ -130,23 +118,27 @@
         </div>
         <footer class="footer">
             <div class="container">
-                <div class="link-container">
+                <div class="footer-logo">
+                    <img src="/img/PGS-logo-web.png">
+                </div>
+                <div class="footer-nav">
                     <ul>
                         <li>
-                            Contact
+                          <a href="/contact.html">Contact</a>
                         </li>
                         <li>
-                            About
+                            <a href="/about.html">About</a>
                         </li>
-                        <li>
-                            OpenBooth
-                        </li>
-                        <li>
-                            Services
-                        </li>
+                          <li>
+                              <a href="https://OpenBooth.store" target="_blank">OpenBooth</a>
+                          </li>
+                          <li>
+                              Services
+                          </li>
                     </ul>
                 </div>
-            </footer>
+            </div>
+        </footer>
         </body>
 
         </html>

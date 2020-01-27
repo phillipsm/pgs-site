@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en-US">
 
@@ -6,8 +5,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Public Good Studio</title>
-    <meta name="description" content="Public Good Studio makes and sells products that offer great value to public good organizations, and are appealing to larger markets.">
+    <title>Public Good Studio | Services</title>
+    <meta name="description" content="Public Good Studio makes and sells products that yield deep value to public good organizations, and are appealing to larger markets. We offer goods and services to all.">
     <meta name="author" content="Public Good Studio">
 
     <link rel="canonical" href="https://publicgood.studio">
@@ -17,6 +16,13 @@
     <meta name="msapplication-TileImage" content="img/favicon-144.png">
 
     <link href="css/main.css" rel="stylesheet">
+    <link href="css/services.css" rel="stylesheet">
+
+    <script src="/js/vendor/p5.min.js"></script>
+    <script src="/js/bars.js"></script>
+    <script src="/js/sink.js"></script>
+    <script src="/js/monday.js"></script>
+
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110979652-1"></script>
     <script>
@@ -36,57 +42,94 @@
         </nav>
     </header>
     <div class="container">
-        <div class="a">
-            <p class="body-text"><span class="highlight-inline">Public Good Studio</span> offers technical, design and fabrication services. Below, you'll find examples of our work.</p>
-        </div>
-        <div class="b">
-            <img src="img/machine-long-view-web.jpg">
-        </div>
-        <div class="c">
-            <img src="img/machine-long-view-web.jpg">
-        </div>
-        <div class="d">
-            <p class="body-text"">Bits and atoms</p>
-        </div>
-        <div class="e">
-            <p>This Stereoscopic camera produces four jpeg images each time you click the button. The images are offset horizontally from each other and when you stitch them together in a gif, you receive an animation with depth.</p>
-            <p>Electronic and physical prototyping. Acrylic case fabrication. Simple circuits using the Raspberry Pi and Arduino platforms. Software systems architecture and implementation in JavaScript and Python. Adobe Illustrator and Photoshop.</p>
+        <div class="intro-text">
+            <p class="body-text">
+                <a href="/" class="highlight-inline-landing">Public Good Studio</a> offers technical, design and fabrication services. Below, you'll find potential areas of collaboration.
+            </p>
         </div>
 
-        <div class="f">
+
+        <!-- Screens and backgrounds section -->
+        <div class="screens-desc">
+            <p class="body-text">Pattern making</p>
+            <p>wrapping moving images across displays. Creating gifs and
+            <p>JavaScript. Algorithmic art. Generative art. Storefront displays. Background art. Adobe Illustrator and Photoshop.</p>
+        </div>
+
+        <div class="screens-img-a" id="canvas-container-a"></div>
+        <div class="screens-img-b" id="canvas-container-b"></div>
+        <div class="screens-img-c" id="canvas-container-c"></div>
+        <!-- / screens and backgrounds section -->
+
+        <!-- cnc routing section -->
+        <div class="cnc-desc">
+            <p class="body-text">CNC routing</p>
+            <p>The CNC mill let's us run a lean and capable shop. It's a big machine, it can precisely mill sheets of wood and plastic as big as 8 feet wide by 14 feet long.</p>
+            <p>It lived in a sign shop before we repurposed it for <a href="https://OpenBooth.store" target="_blank">OpenBooth</a> production.</p>
+            <p>We can help you create CAD/CAM designs, or you can supply your own. </p>
+        </div>
+
+        <div class="cnc-img-a">
             <img src="img/machine-long-view-web.jpg">
         </div>
-        <div class="g">
-            <img src="img/machine-long-view-web.jpg">
+        <div class="cnc-img-b">
+            <img src="img/lean-shop.jpg">
         </div>
-        <div class="h">
-            <p class="body-text">Large format CNC routing</p>
+        <!-- / cnc routing section -->
+
+        <!-- bits and atoms section -->
+        <div class="ba-desc">
+            <p class="body-text">Bits and atoms</p>
+            <p>Do you have an idea that you'd like to hold in your hand? A wild, new piece of furniture you'd like to experience in the real world?</p>
+            <p>Ideation. Sketching. Prototyping. Dreaming. 3D modeling in SolidWorks. Milling wood and plastic for fabrication. Art direction. Physical and digital interfaces supported by modern software systems. Acoustically sensitive enclosures and spaces.</p>
         </div>
-        <div class="i">
-            <p >The heart of the shop is the CNC router. It's a big machine! It can precisely mill objects as large as 8 feet wide by 14 feet long.</p>
-            <p>Most large sheets of plywood and plastic work well in the machine. It lived in a sign shop before we repurposed it for OpenBooth production.</p>
-            <p>We can help you create CAD/CAM designs, or you can supply your own.</p>
+
+        <div class="ba-img-a">
+            <img src="img/safe-comfortable.jpg">
         </div>
-    </div>
-    <footer class="footer">
-        <div class="container">
-            <div class="link-container">
-                <ul>
-                    <li>
-                      Contact
-                    </li>
-                    <li>
-                        About
-                    </li>
-                      <li>
-                          OpenBooth
-                      </li>
-                      <li>
-                          Services
-                      </li>
-                </ul>
+        <!-- / bits and atoms section -->
+
+
+
+        <!--
+
+
+                <p class="body-text">3D modeling and idea realization</p>
             </div>
-    </footer>
-</body>
+            <div class="q">
+                <p>Do you have an idea that you'd like to hold in your hand? A wild, new piece of furniture you'd like in the real world?</p>
+                <p>Ideation. Sketching. Prototyping. Dreaming. 3D modeling in SolidWorks. Milling wood and plastic for fabrication. Art direction. Physical and digital interfaces supported by modern software systems. Acoustically sensitive enclosures and spaces.</p>
+            </div>
 
-</html>
+
+
+
+        -->
+
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-logo">
+                    <img src="/img/PGS-logo-web.png">
+                </div>
+                <div class="footer-nav">
+                    <ul>
+                        <li>
+                          <a href="/contact.html">Contact</a>
+                        </li>
+                        <li>
+                            <a href="/about.html">About</a>
+                        </li>
+                          <li>
+                              <a href="https://OpenBooth.store" target="_blank">OpenBooth</a>
+                          </li>
+                          <li>
+                              Services
+                          </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        </body>
+
+        </html>

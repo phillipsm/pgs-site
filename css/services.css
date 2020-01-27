@@ -3,7 +3,7 @@
 .container {
   max-width: 1100px;
   display: grid;
-  grid-column-gap: 1em;
+  grid-column-gap: 2em;
   grid-row-gap: 2em;
   background-color: #fff;
   color: #444;
@@ -15,7 +15,7 @@
   ". . . . . . . ."
   "screens-img-a screens-img-a screens-img-a screens-img-a screens-img-a screens-desc screens-desc ."
   "screens-img-a screens-img-a screens-img-a screens-img-a screens-img-a screens-desc screens-desc ."
-  "screens-img-b screens-img-b screens-img-b screens-img-b screens-img-b . . ."
+  "screens-img-b screens-img-b screens-img-b screens-img-b screens-img-b screens-desc screens-desc ."
   "screens-img-b screens-img-b screens-img-b screens-img-b screens-img-b . . ."
   "screens-img-c screens-img-c screens-img-c screens-img-c screens-img-c . . ."
   "screens-img-c screens-img-c screens-img-c screens-img-c screens-img-c . . ."
@@ -29,31 +29,13 @@
   ". . . . . . . ."
   "ba-img-a ba-img-a ba-img-a ba-img-a ba-img-a ba-desc ba-desc ."
   "ba-img-a ba-img-a ba-img-a ba-img-a ba-img-a ba-desc ba-desc ."
-  "ba-img-b ba-img-b ba-img-b ba-img-b ba-img-b . . ."
-  "ba-img-b ba-img-b ba-img-b ba-img-b ba-img-b . . ."
-  "ba-img-c ba-img-c ba-img-c ba-img-c ba-img-c . . ."
-  ". . . . . . . ."
-  ". . . . . . . ."
-  "enclo-img-a enclo-img-a enclo-img-a enclo-img-a enclo-img-a enclo-desc enclo-desc ."
-  "enclo-img-a enclo-img-a enclo-img-a enclo-img-a enclo-img-a enclo-desc enclo-desc ."
-  "enclo-img-b enclo-img-b enclo-img-b enclo-img-b enclo-img-b . . ."
-  "enclo-img-b enclo-img-b enclo-img-b enclo-img-b enclo-img-b . . ."
-  "enclo-img-c enclo-img-c enclo-img-c enclo-img-c enclo-img-c . . ."
-
-
 
     ;
 }
 
-
-
 .intro-text {
     min-width: 35rem;
     grid-area: intro-text;
-}
-
-.intro-sketch {
-    grid-area: intro-sketch;
 }
 
 img {
@@ -65,14 +47,25 @@ img {
 
 a:link {
     color: #ee2348;
-    text-decoration: none;
+
 }
 a:visited {
     color: #ee2348;
 }
 
-canvas{
-  width: 100%;
+canvas {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    background-color: #fff;
+    filter: drop-shadow(0 0 .2em #bbb);
+}
+
+.img-desc {
+    color: #999;
+    margin-top: 1em;
+    font-size: .85em;
 }
 
 .highlight-inline-landing {
@@ -82,7 +75,6 @@ canvas{
 .highlight-inline-landing:hover {
     text-decoration: underline;
 }
-
 
 .screens-desc {
     grid-area: screens-desc;
@@ -128,21 +120,4 @@ canvas{
 
 .ba-img-c {
     grid-area: ba-img-c;
-}
-
-
-.enclo-desc {
-    grid-area: enclo-desc;
-}
-
-.enclo-img-a {
-    grid-area: enclo-img-a;
-}
-
-.enclo-img-b {
-    grid-area: enclo-img-b;
-}
-
-.enclo-img-c {
-    grid-area: enclo-img-c;
 }

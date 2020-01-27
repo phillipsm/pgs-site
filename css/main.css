@@ -43,7 +43,7 @@ a:link  {
   color: #fff;
 }
 a:visited { color: #fff }
-a:hover   { color: #555 }
+a:hover   { color: #fff }
 
 .btn {
     background-color: #ee2348;
@@ -60,6 +60,11 @@ a:hover   { color: #555 }
 
 .btn a:visited {
     color: #fff;
+}
+
+.btn:hover {
+
+    filter: drop-shadow(.1em .1em .2em #f3627c);
 }
 
 /* footer */
