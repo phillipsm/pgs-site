@@ -20,8 +20,31 @@ landing page styling
     ". . . . . . footer-logo footer-nav";
 }
 
+@media only screen and (max-width: 900px)  {
+    .container {
+
+        grid-template-areas:
+            "intro-text intro-text intro-text intro-text intro-text intro-text intro-text intro-text"
+            "svc-img svc-img svc-img svc-img svc-img svc-img svc-img svc-img"
+            "svc-title svc-title svc-title svc-title svc-title svc-title svc-title svc-title "
+            "svc-desc svc-desc svc-desc svc-desc svc-desc svc-desc svc-desc svc-desc"
+            "goods-img goods-img goods-img goods-img goods-img goods-img goods-img goods-img"
+            "goods-title goods-desc goods-desc goods-desc goods-desc goods-desc goods-desc ."
+            ". . . . . . footer-logo footer-nav";
+    }
+
+    .intro-text {
+        min-width: 0;
+    }
+
+    body {
+        margin: 1rem;
+    }
+
+}
+
 .intro-text {
-    min-width: 35rem;
+
     grid-area: intro-text;
 }
 
@@ -61,4 +84,8 @@ landing page styling
 
 .goods-desc {
     grid-area: goods-desc;
+}
+
+.button-container {
+    margin-top: 2em;
 }
