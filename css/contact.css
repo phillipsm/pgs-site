@@ -14,14 +14,6 @@
   "contact-img-a contact-img-a contact-img-a contact-img-a contact-img-a contact-desc contact-desc contact-desc";
 }
 
-.highlight-inline-landing {
-    color: #ee2348;
-}
-
-.highlight-inline-landing:hover {
-    text-decoration: underline;
-}
-
 .intro-text {
     grid-area: intro-text;
 }

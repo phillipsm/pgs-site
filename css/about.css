@@ -15,14 +15,6 @@
   "about-img-b about-img-b about-img-b about-img-b about-desc about-desc about-desc .";
 }
 
-.highlight-inline-landing {
-    color: #ee2348;
-}
-
-.highlight-inline-landing:hover {
-    text-decoration: underline;
-}
-
 .intro-text {
     grid-area: intro-text;
 }

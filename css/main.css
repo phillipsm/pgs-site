@@ -20,16 +20,17 @@ body {
   margin: 6rem 6rem 0 6rem;
 }
 
+a, a:link, a:hover, a:active, a:visited, a:focus {
+    text-decoration:none;
+}
 
 a:link {
     border-bottom: .02em solid #ee2348;
-    text-decoration: none;
     color: #444;
 
 }
 a:hover {
     color: #444;
-    text-decoration: none;
     border-bottom: .1em solid #ee2348;
 }
 
@@ -62,15 +63,13 @@ img {
 }
 
 p {
-    margin: 0;
-    margin-bottom: 1em;
+    margin: 0 0 1em 0;
 }
 
 .footer-logo {
     grid-area: footer-logo;
     align-self: end;
 }
-
 
 .btn {
     background-color: #ee2348;
@@ -124,7 +123,8 @@ footer .container {
 
 .footer-nav {
     grid-area: footer-nav;
-    place-self: end center;
+    place-self: center center;
+    margin: 0;
 }
 
 .footer-logo img {
@@ -135,6 +135,10 @@ ul {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+ul p {
+    margin-bottom: .5em;
 }
 
 footer {
@@ -150,7 +154,7 @@ footer {
     }
 
     body {
-        margin: 1rem;
+        margin: 2rem;
     }
 
     .container {

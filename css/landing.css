@@ -31,21 +31,12 @@ landing page styling
 }
 
 .intro-text {
-
     grid-area: intro-text;
 }
 
 .svc-img {
     grid-area: svc-img;
 }
-
-.svc-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
 .svc-title {
     grid-area: svc-title;
 }
@@ -56,13 +47,6 @@ landing page styling
 
 .goods-img {
     grid-area: goods-img;
-}
-
-.goods-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
 }
 
 .goods-title {
