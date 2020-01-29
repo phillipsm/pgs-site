@@ -16,9 +16,7 @@ landing page styling
     "svc-img svc-img svc-img svc-img svc-img svc-img svc-img svc-img"
     "svc-title svc-desc svc-desc . . . . ."
     "goods-img goods-img goods-img goods-img goods-img goods-img goods-img goods-img"
-    "goods-title goods-desc goods-desc . . . . ."
-    ". . . . . . footer-logo footer-nav";
-}
+    "goods-title goods-desc goods-desc . . . . .";}
 
 @media only screen and (max-width: 900px)  {
     .container {
@@ -29,8 +27,7 @@ landing page styling
             "svc-title svc-title svc-title svc-title svc-title svc-title svc-title svc-title "
             "svc-desc svc-desc svc-desc svc-desc svc-desc svc-desc svc-desc svc-desc"
             "goods-img goods-img goods-img goods-img goods-img goods-img goods-img goods-img"
-            "goods-title goods-desc goods-desc goods-desc goods-desc goods-desc goods-desc ."
-            ". . . . . . footer-logo footer-nav";
+            "goods-title goods-desc goods-desc goods-desc goods-desc goods-desc goods-desc .";
     }
 
     .intro-text {
@@ -84,8 +81,4 @@ landing page styling
 
 .goods-desc {
     grid-area: goods-desc;
-}
-
-.button-container {
-    margin-top: 2em;
 }

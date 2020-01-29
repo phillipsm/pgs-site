@@ -6,7 +6,6 @@
   grid-column-gap: 2em;
   grid-row-gap: 2em;
   background-color: #fff;
-  color: #444;
   margin: 0 auto;
   grid-template-columns: repeat(8, 1fr);
   grid-template-areas:
@@ -38,21 +37,6 @@
     grid-area: intro-text;
 }
 
-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-a:link {
-    color: #ee2348;
-
-}
-a:visited {
-    color: #ee2348;
-}
-
 canvas {
     height: 100%;
     width: 100%;
@@ -66,14 +50,6 @@ canvas {
     color: #999;
     margin-top: 1em;
     font-size: .85em;
-}
-
-.highlight-inline-landing {
-    color: #ee2348;
-}
-
-.highlight-inline-landing:hover {
-    text-decoration: underline;
 }
 
 .screens-desc {

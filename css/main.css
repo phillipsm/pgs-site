@@ -13,19 +13,51 @@ html {
 }
 
 body {
-  background-color: #fff /*#b6e2e9*/;
-  color: #000;
+  background-color: #fff
+  color: #444;
   font-size: 1.4rem;
   font-family: 'Walsheim Regular', sans-serif;
   margin: 6rem 6rem 0 6rem;
 }
 
 
+a:link {
+    border-bottom: .02em solid #ee2348;
+    text-decoration: none;
+    color: #444;
+
+}
+a:hover {
+    color: #444;
+    text-decoration: none;
+    border-bottom: .1em solid #ee2348;
+}
+
+a:visited {
+    border-bottom: .02em solid #ee2348;
+    color: #444;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
 .body-text {
     font-size: 2rem;
 }
 
 .highlight-inline {
+  color: #ee2348;
+}
+
+.highlight-inline:link {
+  color: #ee2348;
+}
+
+.highlight-inline:visited {
   color: #ee2348;
 }
 
@@ -36,13 +68,9 @@ p {
 
 .footer-logo {
     grid-area: footer-logo;
+    align-self: end;
 }
 
-a:link  {
-  color: #fff;
-}
-a:visited { color: #fff }
-a:hover   { color: #fff }
 
 .btn {
     background-color: #ee2348;
@@ -53,17 +81,24 @@ a:hover   { color: #fff }
     padding: .5em 1em;
 }
 
-.btn a {
+.btn:link {
     color: #fff;
+    border: none;
 }
 
-.btn a:visited {
+
+.btn:visited {
     color: #fff;
+    border: none;
 }
 
 .btn:hover {
-
+    border: none;
     filter: drop-shadow(.1em .1em .2em #f3627c);
+}
+
+.button-container {
+    margin-top: 2em;
 }
 
 /* footer */
@@ -79,7 +114,7 @@ footer .container {
   margin: 0 auto;
   grid-template-columns: repeat(8, 1fr);
   grid-template-areas:
-    ". . . . . . footer-logo footer-nav";
+    ". . . . . footer-logo footer-logo footer-nav";
 }
 
 .footer-logo {
@@ -88,14 +123,11 @@ footer .container {
 
 .footer-nav {
     grid-area: footer-nav;
+    align-self: end;
 }
 
 .footer-logo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    max-height: 14rem;
+    height:100%;
 }
 
 ul {
@@ -114,12 +146,4 @@ footer {
   p {
       font-size: 1.5rem;
   }
-}
-
-footer a:link {
-    color: #000;
-}
-
-footer a:visited {
-    color: #000;
 }
