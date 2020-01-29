@@ -28,7 +28,7 @@
   ". . . . . . . ."
   ". . . . . . . ."
   "ba-img-a ba-img-a ba-img-a ba-img-a ba-img-a ba-desc ba-desc ."
-  "ba-img-a ba-img-a ba-img-a ba-img-a ba-img-a ba-desc ba-desc ."
+  "ba-img-b ba-img-b ba-img-b ba-img-b ba-img-b ba-desc ba-desc ."
 
     ;
 }
@@ -116,8 +116,4 @@ canvas {
 
 .ba-img-b {
     grid-area: ba-img-b;
-}
-
-.ba-img-c {
-    grid-area: ba-img-c;
 }

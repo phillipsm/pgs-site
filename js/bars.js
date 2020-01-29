@@ -111,7 +111,7 @@ const bars = ( sketch ) => {
 
   	var random_rect = rectangles[random_index];
 
-  	if (shimmering_rects.indexOf(random_rect.id) === -1) {
+  	if ( shimmering_rects.indexOf(random_rect.id) === -1 ) {
 
   		shimmering_rects.push(random_rect.id);
 

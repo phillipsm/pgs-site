@@ -1,6 +1,4 @@
 const monday_sketch = ( sketch ) => {
-
-
     let radius = 55;
     let x = 0;
     let y = 0;
@@ -8,6 +6,7 @@ const monday_sketch = ( sketch ) => {
     let message_to_draw = 'SUNDAY MONDAY TUESDAY WEDNESDAY THURSDAY FRIDAY SATURDAY';
     let position_in_message = 0;
     let sketch_width, sketch_height;
+
 
     sketch.setup = () => {
         sketch_width = document.getElementById('canvas-container-c').clientWidth;
@@ -28,7 +27,7 @@ const monday_sketch = ( sketch ) => {
     }
 
     sketch.line_it_up = () => {
-        y=0;
+        y = 0;
         sketch.clear();
 
         while (y <= sketch_height) {
@@ -51,6 +50,24 @@ const monday_sketch = ( sketch ) => {
 
         if (position_in_message > message_to_draw.length) {
             position_in_message = 0;
+        }
+    }
+
+    sketch.windowResized = () => {
+        sketch.setDimensions();
+        sketch.resizeCanvas(sketch_width, sketch_height);
+        sketch.textSize(sketch_height/1.3);
+    }
+
+    sketch.setDimensions = () => {
+
+        // We use this js file in our services page and as a fullscreen
+        // Calculate the width and height of our canvas here
+        sketch_width = document.getElementById('canvas-container-a').clientWidth;
+        if (document.getElementsByClassName('services-page')[0]) {
+            sketch_height = sketch_width * (2/3);
+        } else {
+            sketch_height = window.innerHeight;
         }
     }
 

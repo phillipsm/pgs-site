@@ -29,15 +29,14 @@ const sink_sketch = ( sketch ) => {
 
         // We use this js file in our services page and as a fullscreen
         // Calculate the width and height of our canvas here
-        sketch_width = document.getElementById('canvas-container-a').clientWidth;
+        sketch_width = document.getElementById('canvas-container-b').clientWidth;
         if (document.getElementsByClassName('services-page')[0]) {
             sketch_height = sketch_width * (2/3);
         } else {
             sketch_height = window.innerHeight;
-            console.log(sketch_height)
         }
     }
 
 };
 
-new p5(sink_sketch, 'canvas-container-a');
+new p5(sink_sketch, 'canvas-container-b');
