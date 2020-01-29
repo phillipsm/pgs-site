@@ -39,9 +39,12 @@
     grid-area: about-img-b;
 }
 
-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+@media only screen and (max-width: 900px)  {
+    .container {
+        grid-template-areas:
+            "intro-text intro-text intro-text intro-text intro-text intro-text intro-text intro-text"
+            "about-img-a about-img-a about-img-a about-img-a about-img-a about-img-a about-img-a about-img-a"
+            "about-desc about-desc about-desc about-desc about-desc about-desc about-desc about-desc"
+            "about-img-b about-img-b about-img-b about-img-b about-img-b about-img-b about-img-b about-img-b";
+    }
 }

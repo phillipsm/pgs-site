@@ -79,6 +79,7 @@ p {
     text-decoration: none;
     font-size: 1.4rem;
     padding: .5em 1em;
+    white-space: nowrap;
 }
 
 .btn:link {
@@ -140,10 +141,18 @@ footer {
 
 /* /footer */
 
+@media only screen and (max-width: 900px)  {
 
-@media (max-width: 576px) {
+    html {
+      font-size: 12px;
+    }
 
-  p {
-      font-size: 1.5rem;
-  }
+    body {
+        margin: 1rem;
+    }
+
+    .container {
+        grid-column-gap: .5em;
+        grid-row-gap: .5em;
+    }
 }

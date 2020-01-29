@@ -24,20 +24,10 @@ landing page styling
         grid-template-areas:
             "intro-text intro-text intro-text intro-text intro-text intro-text intro-text intro-text"
             "svc-img svc-img svc-img svc-img svc-img svc-img svc-img svc-img"
-            "svc-title svc-title svc-title svc-title svc-title svc-title svc-title svc-title "
-            "svc-desc svc-desc svc-desc svc-desc svc-desc svc-desc svc-desc svc-desc"
+            "svc-title svc-desc svc-desc svc-desc svc-desc svc-desc svc-desc svc-desc"
             "goods-img goods-img goods-img goods-img goods-img goods-img goods-img goods-img"
             "goods-title goods-desc goods-desc goods-desc goods-desc goods-desc goods-desc .";
     }
-
-    .intro-text {
-        min-width: 0;
-    }
-
-    body {
-        margin: 1rem;
-    }
-
 }
 
 .intro-text {

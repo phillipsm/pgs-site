@@ -56,7 +56,6 @@ const monday_sketch = ( sketch ) => {
     sketch.windowResized = () => {
         sketch.setDimensions();
         sketch.resizeCanvas(sketch_width, sketch_height);
-        sketch.textSize(sketch_height/1.3);
     }
 
     sketch.setDimensions = () => {

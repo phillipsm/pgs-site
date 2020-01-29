@@ -93,3 +93,23 @@ canvas {
 .ba-img-b {
     grid-area: ba-img-b;
 }
+
+
+
+
+@media only screen and (max-width: 900px) {
+    .container {
+      grid-template-areas:
+      "intro-text intro-text intro-text intro-text intro-text intro-text intro-text intro-text"
+      "screens-img-a screens-img-a screens-img-a screens-img-a screens-img-a screens-img-a screens-img-a screens-img-a"
+      "screens-img-b screens-img-b screens-img-b screens-img-b screens-img-b screens-img-b screens-img-b screens-img-b "
+      "screens-img-c screens-img-c screens-img-c screens-img-c screens-img-c screens-img-c screens-img-c screens-img-c"
+      "screens-desc screens-desc screens-desc screens-desc screens-desc screens-desc screens-desc screens-desc"
+      "cnc-img-a cnc-img-a cnc-img-a cnc-img-a cnc-img-a cnc-img-a cnc-img-a cnc-img-a"
+      "cnc-img-b cnc-img-b cnc-img-b cnc-img-b cnc-img-b cnc-img-b cnc-img-b cnc-img-b"
+      "cnc-desc cnc-desc cnc-desc cnc-desc cnc-desc cnc-desc cnc-desc cnc-desc"
+      "ba-img-a ba-img-a ba-img-a ba-img-a ba-img-a ba-img-a ba-img-a ba-img-a"
+      "ba-img-b ba-img-b ba-img-b ba-img-b ba-img-b ba-img-b ba-img-b ba-img-b"
+      "ba-desc ba-desc ba-desc ba-desc ba-desc ba-desc ba-desc ba-desc";
+    }
+}
