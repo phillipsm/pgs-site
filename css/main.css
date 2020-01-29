@@ -124,7 +124,7 @@ footer .container {
 
 .footer-nav {
     grid-area: footer-nav;
-    align-self: end;
+    place-self: end center;
 }
 
 .footer-logo img {
@@ -133,6 +133,8 @@ footer .container {
 
 ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 footer {
@@ -155,4 +157,11 @@ footer {
         grid-column-gap: .5em;
         grid-row-gap: .5em;
     }
+
+    footer .container {
+
+      grid-template-areas:
+        ". footer-logo footer-logo footer-logo footer-nav footer-nav footer-nav .";
+    }
+
 }
