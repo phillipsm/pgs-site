@@ -28,8 +28,9 @@
   ". . . . . . . ."
   "ba-img-a ba-img-a ba-img-a ba-img-a ba-img-a ba-desc ba-desc ."
   "ba-img-b ba-img-b ba-img-b ba-img-b ba-img-b ba-desc ba-desc ."
-
-    ;
+  ". . . . . . . ."
+  ". . . . . . . ."
+  "oe-img-a oe-img-a oe-img-a oe-img-a oe-img-a oe-desc oe-desc .";
 }
 
 .intro-text {
@@ -94,6 +95,17 @@ canvas {
 }
 
 
+.oe-desc {
+    grid-area: oe-desc;
+}
+
+.oe-img-a {
+    grid-area: oe-img-a;
+}
+
+.oe-img-b {
+    grid-area: oe-img-b;
+}
 
 
 @media only screen and (max-width: 900px) {
@@ -109,6 +121,7 @@ canvas {
       "cnc-desc cnc-desc cnc-desc cnc-desc cnc-desc cnc-desc cnc-desc cnc-desc"
       "ba-img-a ba-img-a ba-img-a ba-img-a ba-img-a ba-img-a ba-img-a ba-img-a"
       "ba-img-b ba-img-b ba-img-b ba-img-b ba-img-b ba-img-b ba-img-b ba-img-b"
-      "ba-desc ba-desc ba-desc ba-desc ba-desc ba-desc ba-desc ba-desc";
+      "ba-desc ba-desc ba-desc ba-desc ba-desc ba-desc ba-desc ba-desc"
+      "old-examples old-examples old-examples old-examples old-examples old-examples old-examples old-examples";
     }
 }
