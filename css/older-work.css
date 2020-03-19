@@ -71,17 +71,15 @@
 @media only screen and (max-width: 900px) {
     .container {
       grid-template-areas:
-      "intro-text intro-text intro-text intro-text intro-text intro-text intro-text intro-text"
-      "screens-img-a screens-img-a screens-img-a screens-img-a screens-img-a screens-img-a screens-img-a screens-img-a"
-      "screens-img-b screens-img-b screens-img-b screens-img-b screens-img-b screens-img-b screens-img-b screens-img-b "
-      "screens-img-c screens-img-c screens-img-c screens-img-c screens-img-c screens-img-c screens-img-c screens-img-c"
-      "screens-desc screens-desc screens-desc screens-desc screens-desc screens-desc screens-desc screens-desc"
-      "cnc-img-a cnc-img-a cnc-img-a cnc-img-a cnc-img-a cnc-img-a cnc-img-a cnc-img-a"
-      "cnc-img-b cnc-img-b cnc-img-b cnc-img-b cnc-img-b cnc-img-b cnc-img-b cnc-img-b"
-      "cnc-desc cnc-desc cnc-desc cnc-desc cnc-desc cnc-desc cnc-desc cnc-desc"
-      "ba-img-a ba-img-a ba-img-a ba-img-a ba-img-a ba-img-a ba-img-a ba-img-a"
-      "ba-img-b ba-img-b ba-img-b ba-img-b ba-img-b ba-img-b ba-img-b ba-img-b"
-      "ba-desc ba-desc ba-desc ba-desc ba-desc ba-desc ba-desc ba-desc"
-      "old-examples old-examples old-examples old-examples old-examples old-examples old-examples old-examples";
+      "intro-text intro-text intro-text"
+      "cam-proj-container cam-proj-container cam-proj-container"
+      "frames-proj-container frames-proj-container frames-proj-container"
+      "ambient-timer-proj-container ambient-timer-proj-container ambient-timer-proj-container"
+      "hovermarks-proj-container hovermarks-proj-container hovermarks-proj-container"
+      "awesome-box-proj-container awesome-box-proj-container awesome-box-proj-container"
+      "thelibrary-fm-timer-proj-container thelibrary-fm-timer-proj-container thelibrary-fm-timer-proj-container"
+      "pyfav-proj-container pyfav-proj-container pyfav-proj-container"
+      "three60-proj-container three60-proj-container three60-proj-container"
+      ;
     }
 }
