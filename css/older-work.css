@@ -1,0 +1,87 @@
+/* services */
+
+.container {
+  max-width: 1100px;
+  display: grid;
+  grid-column-gap: 2em;
+  grid-row-gap: 2em;
+  background-color: #fff;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+  "intro-text intro-text ."
+  ". . ."
+  ". . ."
+  "cam-proj-container frames-proj-container ambient-timer-proj-container"
+  "hovermarks-proj-container awesome-box-proj-container thelibrary-fm-timer-proj-container"
+  "pyfav-proj-container three60-proj-container ."
+  ;
+}
+
+.intro-text {
+    grid-area: intro-text;
+    max-width: 45rem;
+}
+
+.cam-proj-container {
+    grid-area: cam-proj-container;
+}
+
+.frames-proj-container {
+    grid-area: frames-proj-container;
+}
+
+.ambient-timer-proj-container {
+    grid-area: ambient-timer-proj-container;
+}
+
+.hovermarks-proj-container {
+    grid-area: hovermarks-proj-container;
+}
+
+.awesome-box-proj-container {
+    grid-area: awesome-box-proj-container;
+}
+
+.thelibrary-fm-timer-proj-container {
+    grid-area: thelibrary-fm-timer-proj-container;
+}
+
+.pyfav-proj-container {
+    grid-area: pyfav-proj-container;
+}
+
+.three60-proj-container {
+    grid-area: three60-proj-container;
+}
+
+.project-title {
+    font-size: 1.3em;
+    margin-right: 1em;
+}
+
+
+.container img {
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 1rem;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .container {
+      grid-template-areas:
+      "intro-text intro-text intro-text intro-text intro-text intro-text intro-text intro-text"
+      "screens-img-a screens-img-a screens-img-a screens-img-a screens-img-a screens-img-a screens-img-a screens-img-a"
+      "screens-img-b screens-img-b screens-img-b screens-img-b screens-img-b screens-img-b screens-img-b screens-img-b "
+      "screens-img-c screens-img-c screens-img-c screens-img-c screens-img-c screens-img-c screens-img-c screens-img-c"
+      "screens-desc screens-desc screens-desc screens-desc screens-desc screens-desc screens-desc screens-desc"
+      "cnc-img-a cnc-img-a cnc-img-a cnc-img-a cnc-img-a cnc-img-a cnc-img-a cnc-img-a"
+      "cnc-img-b cnc-img-b cnc-img-b cnc-img-b cnc-img-b cnc-img-b cnc-img-b cnc-img-b"
+      "cnc-desc cnc-desc cnc-desc cnc-desc cnc-desc cnc-desc cnc-desc cnc-desc"
+      "ba-img-a ba-img-a ba-img-a ba-img-a ba-img-a ba-img-a ba-img-a ba-img-a"
+      "ba-img-b ba-img-b ba-img-b ba-img-b ba-img-b ba-img-b ba-img-b ba-img-b"
+      "ba-desc ba-desc ba-desc ba-desc ba-desc ba-desc ba-desc ba-desc"
+      "old-examples old-examples old-examples old-examples old-examples old-examples old-examples old-examples";
+    }
+}
