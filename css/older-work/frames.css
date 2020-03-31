@@ -74,9 +74,13 @@ img {
     .container {
       grid-template-areas:
       "intro-text intro-text intro-text intro-text intro-text intro-text intro-text intro-text"
+      ". . . . . . . ."
+      ". . . . . . . ."
       "img-a img-a img-a img-a img-a img-a img-a img-a"
-      "img-b img-b img-b img-c img-c img-c . ."
-      "img-d img-d img-d img-e img-e img-e . ."
+      "img-b img-b img-b img-b img-c img-c img-c img-c"
+      "desc desc desc desc desc desc desc desc"
       ;
     }
+
+    
 }

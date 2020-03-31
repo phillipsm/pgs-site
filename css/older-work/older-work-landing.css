@@ -75,6 +75,7 @@
     .container {
       grid-template-areas:
       "intro-text intro-text intro-text"
+      ". . ."
       "cam-proj-container cam-proj-container cam-proj-container"
       "frames-proj-container frames-proj-container frames-proj-container"
       "ambient-timer-proj-container ambient-timer-proj-container ambient-timer-proj-container"

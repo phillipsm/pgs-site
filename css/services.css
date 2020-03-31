@@ -106,6 +106,7 @@ canvas {
     .container {
       grid-template-areas:
       "intro-text intro-text intro-text intro-text intro-text intro-text intro-text intro-text"
+      ". . . . . . . ."
       "screens-img-a screens-img-a screens-img-a screens-img-a screens-img-a screens-img-a screens-img-a screens-img-a"
       "screens-img-b screens-img-b screens-img-b screens-img-b screens-img-b screens-img-b screens-img-b screens-img-b "
       "screens-img-c screens-img-c screens-img-c screens-img-c screens-img-c screens-img-c screens-img-c screens-img-c"
