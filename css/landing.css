@@ -13,8 +13,10 @@ landing page styling
   grid-template-columns: repeat(8, 1fr);
   grid-template-areas:
     "intro-text intro-text intro-text intro-text . . . ."
+    ". . . . . . . ."
     "svc-img svc-img svc-img svc-img svc-img svc-img svc-img svc-img"
     "svc-title svc-desc svc-desc . . . . ."
+    ". . . . . . . ."
     "goods-img goods-img goods-img goods-img goods-img goods-img goods-img goods-img"
     "goods-title goods-desc goods-desc . . . . .";}
 
@@ -23,8 +25,10 @@ landing page styling
 
         grid-template-areas:
             "intro-text intro-text intro-text intro-text intro-text intro-text intro-text intro-text"
+            ". . . . . . . ."
             "svc-img svc-img svc-img svc-img svc-img svc-img svc-img svc-img"
             "svc-title svc-desc svc-desc svc-desc svc-desc svc-desc svc-desc svc-desc"
+            ". . . . . . . ."
             "goods-img goods-img goods-img goods-img goods-img goods-img goods-img goods-img"
             "goods-title goods-desc goods-desc goods-desc goods-desc goods-desc goods-desc .";
     }
