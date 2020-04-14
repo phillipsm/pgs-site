@@ -20,11 +20,11 @@
   "screens-img-c screens-img-c screens-img-c screens-img-c screens-img-c . . ."
   ". . . . . . . ."
   ". . . . . . . ."
+  "oe-img-a oe-img-a oe-img-a oe-img-a oe-img-a oe-desc oe-desc ."
+  ". . . . . . . ."
+  ". . . . . . . ."
   "ba-img-a ba-img-a ba-img-a ba-img-a ba-img-a ba-desc ba-desc ."
-  "ba-img-b ba-img-b ba-img-b ba-img-b ba-img-b ba-desc ba-desc ."
-  ". . . . . . . ."
-  ". . . . . . . ."
-  "oe-img-a oe-img-a oe-img-a oe-img-a oe-img-a oe-desc oe-desc .";
+  "ba-img-b ba-img-b ba-img-b ba-img-b ba-img-b ba-desc ba-desc .";
 }
 
 .intro-text {
@@ -38,6 +38,16 @@ canvas {
     display: block;
     background-color: #fff;
     filter: drop-shadow(0 0 .2em #bbb);
+}
+
+#canvas-container-a {
+    width: 100%;
+    height: calc(100% * .66);
+    object-fit: cover;
+    display: block;
+    background-color: #fff;
+    filter: drop-shadow(0 0 .2em #bbb);
+
 }
 
 .img-desc {
@@ -113,13 +123,13 @@ canvas {
       "screens-desc screens-desc screens-desc screens-desc screens-desc screens-desc screens-desc screens-desc"
       ". . . . . . . ."
       ". . . . . . . ."
+      "oe-img-a oe-img-a oe-img-a oe-img-a oe-img-a oe-img-a oe-img-a oe-img-a"
+      "oe-desc oe-desc oe-desc oe-desc oe-desc oe-desc oe-desc oe-desc"
+      ". . . . . . . ."
+      ". . . . . . . ."
       "ba-img-a ba-img-a ba-img-a ba-img-a ba-img-a ba-img-a ba-img-a ba-img-a"
       "ba-img-b ba-img-b ba-img-b ba-img-b ba-img-b ba-img-b ba-img-b ba-img-b"
       "ba-desc ba-desc ba-desc ba-desc ba-desc ba-desc ba-desc ba-desc"
-      ". . . . . . . ."
-      ". . . . . . . ."
-      "oe-img-a oe-img-a oe-img-a oe-img-a oe-img-a oe-img-a oe-img-a oe-img-a"
-      "oe-desc oe-desc oe-desc oe-desc oe-desc oe-desc oe-desc oe-desc"
       ;
     }
 }
