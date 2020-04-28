@@ -1,4 +1,8 @@
-- name: Home
-  link: /
+- name: Contact
+  link: /contact
 - name: About
-  link: /about.html
+  link: /about
+- name: OpenBooth
+  link: //OpenBooth.store
+- name: Services
+  link: /services

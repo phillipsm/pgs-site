@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Walsheim Regular";
-  src: url("../fonts/GT-Walsheim-Regular.woff2") format("woff2"), url("../fonts/GT-Walsheim-Regular.woff") format("woff");
+  src: url("/assets/fonts/GT-Walsheim-Regular.woff2") format("woff2"), url("/assets/fonts/GT-Walsheim-Regular.woff") format("woff");
 }
 
 @font-face {
   font-family: "Walsheim Medium";
-  src: url("../fonts/GT-Walsheim-Medium.woff2") format("woff2"), url("../fonts/GT-Walsheim-Medium.woff") format("woff");
+  src: url("/assets/fonts/GT-Walsheim-Medium.woff2") format("woff2"), url("/assets/fonts/GT-Walsheim-Medium.woff") format("woff");
 }
 
 html {

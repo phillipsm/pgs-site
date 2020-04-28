@@ -1,0 +1,21 @@
+<footer class="footer">
+    <div class="container">
+        <div class="footer-logo">
+            <img src="/assets/images/PGS-logo-web.png">
+        </div>
+        <div class="footer-nav">
+            <ul>
+                <li>
+                    {% for item in site.data.navigation %}
+                    <p>
+                        {% if page.url contains item.link %}
+                            {{ item.name }}
+                        {% else %}
+                            <a href="{{ item.link }}" {% if item.name == 'OpenBooth' %}target="_blank"{% endif %}>{{ item.name }}</a>
+                        {% endif %}
+                    </p>
+                    {% endfor %}
+            </ul>
+        </div>
+    </div>
+</footer>
