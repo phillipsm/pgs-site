@@ -21,3 +21,9 @@ name: OpenBooth
 links:
   - https://instagram.com/openboothstore
   - https://twitter.com/OpenBooth2
+
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true

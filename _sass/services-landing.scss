@@ -1,0 +1,120 @@
+.services-landing {
+    .container {
+      max-width: 1100px;
+      display: grid;
+      grid-column-gap: 2em;
+      grid-row-gap: 2em;
+      background-color: #fff;
+      margin: 0 auto;
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-areas:
+        "intro-text intro-text intro-text intro-text . . . ."
+        ". . . . . . . ."
+        ". . . . . . . ."
+        "screens-img-a screens-img-a screens-img-a screens-img-a screens-img-a screens-desc screens-desc ."
+        "screens-img-a screens-img-a screens-img-a screens-img-a screens-img-a screens-desc screens-desc ."
+        "screens-img-b screens-img-b screens-img-b screens-img-b screens-img-b screens-desc screens-desc ."
+        "screens-img-b screens-img-b screens-img-b screens-img-b screens-img-b . . ."
+        "screens-img-c screens-img-c screens-img-c screens-img-c screens-img-c . . ."
+        "screens-img-c screens-img-c screens-img-c screens-img-c screens-img-c . . ."
+        ". . . . . . . ."
+        ". . . . . . . ."
+        "oe-img-a oe-img-a oe-img-a oe-img-a oe-img-a oe-desc oe-desc ."
+        ". . . . . . . ."
+        ". . . . . . . ."
+        "ba-img-a ba-img-a ba-img-a ba-img-a ba-img-a ba-desc ba-desc ."
+        "ba-img-b ba-img-b ba-img-b ba-img-b ba-img-b ba-desc ba-desc .";
+    }
+
+    .intro-text {
+      grid-area: intro-text;
+    }
+
+    canvas {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      display: block;
+      background-color: #fff;
+      filter: drop-shadow(0 0 0.2em #bbb);
+    }
+
+    .img-desc {
+      color: #999;
+      margin-top: 1em;
+      font-size: 0.85em;
+    }
+
+    .screens-desc {
+      grid-area: screens-desc;
+    }
+
+    .screens-img-a {
+      grid-area: screens-img-a;
+    }
+
+    .screens-img-b {
+      grid-area: screens-img-b;
+    }
+
+    .screens-img-c {
+      grid-area: screens-img-c;
+    }
+
+    .cnc-desc {
+      grid-area: cnc-desc;
+    }
+
+    .cnc-img-a {
+      grid-area: cnc-img-a;
+    }
+
+    .cnc-img-b {
+      grid-area: cnc-img-b;
+    }
+
+    .ba-desc {
+      grid-area: ba-desc;
+    }
+
+    .ba-img-a {
+      grid-area: ba-img-a;
+    }
+
+    .ba-img-b {
+      grid-area: ba-img-b;
+    }
+
+    .oe-desc {
+      grid-area: oe-desc;
+    }
+
+    .oe-img-a {
+      grid-area: oe-img-a;
+    }
+
+    .oe-img-b {
+      grid-area: oe-img-b;
+    }
+
+    @media only screen and (max-width: 900px) {
+      .container {
+        grid-template-areas:
+        "intro-text intro-text intro-text intro-text intro-text intro-text intro-text intro-text"
+        ". . . . . . . ."
+        "screens-img-a screens-img-a screens-img-a screens-img-a screens-img-a screens-img-a screens-img-a screens-img-a"
+        "screens-img-b screens-img-b screens-img-b screens-img-b screens-img-b screens-img-b screens-img-b screens-img-b"
+        "screens-img-c screens-img-c screens-img-c screens-img-c screens-img-c screens-img-c screens-img-c screens-img-c"
+        "screens-desc screens-desc screens-desc screens-desc screens-desc screens-desc screens-desc screens-desc"
+        ". . . . . . . ."
+        ". . . . . . . ."
+        "oe-img-a oe-img-a oe-img-a oe-img-a oe-img-a oe-img-a oe-img-a oe-img-a"
+        "oe-desc oe-desc oe-desc oe-desc oe-desc oe-desc oe-desc oe-desc"
+        ". . . . . . . ."
+        ". . . . . . . ."
+        "ba-img-a ba-img-a ba-img-a ba-img-a ba-img-a ba-img-a ba-img-a ba-img-a"
+        "ba-img-b ba-img-b ba-img-b ba-img-b ba-img-b ba-img-b ba-img-b ba-img-b"
+        "ba-desc ba-desc ba-desc ba-desc ba-desc ba-desc ba-desc ba-desc";
+      }
+    }
+}
