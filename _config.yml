@@ -2,3 +2,22 @@ exclude: ['old']
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
+
+title: Public Good Studio
+description: Public Good Studio makes and sells products that yield deep value to public good organizations, and are appealing to larger markets. We offer goods and services to all.
+logo: /assets/images/favicon-152.png
+url: https://publicgood.studio
+lang: en-US
+
+twitter:
+  username: OpenBooth2
+  card: summary
+
+facebook:
+  publisher: https://www.facebook.com/OpenBooth-101900624619180
+
+social:
+name: OpenBooth
+links:
+  - https://instagram.com/openboothstore
+  - https://twitter.com/OpenBooth2
