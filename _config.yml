@@ -1,0 +1,4 @@
+exclude: ['old']
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
