@@ -1,0 +1,85 @@
+.ambient-timer {
+
+    .container {
+      max-width: 1100px;
+      display: grid;
+      grid-column-gap: 2em;
+      grid-row-gap: 2em;
+      background-color: #fff;
+      margin: 0 auto;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-areas:
+      "intro-text intro-text intro-text . . ."
+      ". . . . . ."
+      ". . . . . ."
+      "img-a img-a img-a img-a desc desc"
+      "img-b img-b img-b img-b desc desc"
+      "img-c img-c img-c img-c desc desc"
+      "img-d img-d img-d img-d desc desc"
+      "img-e img-e img-e img-e desc desc";
+    }
+
+
+    .intro-text {
+        grid-area: intro-text;
+    }
+
+
+    .img-desc {
+        color: #999;
+        margin-top: 1em;
+        font-size: .85em;
+    }
+
+    .desc {
+        grid-area: desc;
+    }
+
+    .img-a {
+        grid-area: img-a;
+    }
+
+    .img-b {
+        grid-area: img-b;
+    }
+
+    .img-c {
+        grid-area: img-c;
+    }
+
+    .img-d {
+        grid-area: img-d;
+    }
+
+    .img-e {
+        grid-area: img-e;
+    }
+
+    .desc-title {
+        font-size: 1.1em;
+        padding-top: 1em;
+        margin-bottom: .7em;
+    }
+
+    .body-text {
+        margin-bottom: .4em;
+    }
+
+    @media only screen and (max-width: 900px) {
+        .container {
+          grid-template-areas:
+          "intro-text intro-text intro-text intro-text intro-text intro-text"
+          ". . . . . ."
+          ". . . . . ."
+          "img-a img-a img-a img-a img-a img-a"
+          "img-b img-b img-b img-b img-c img-c"
+          "img-d img-d img-d img-d img-e img-e"
+          "img-f img-f img-f img-f img-f img-f"
+          "img-g img-g img-g img-g img-g img-g"
+          "img-h img-h img-h img-h img-h img-h"
+          "img-i img-i img-i img-i img-i img-i"
+          "desc desc desc desc desc desc";
+        }
+    }
+
+}
