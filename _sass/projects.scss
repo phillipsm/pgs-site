@@ -1,0 +1,172 @@
+.services-landing {
+    .container {
+      max-width: 1100px;
+      display: grid;
+      grid-column-gap: 2em;
+      grid-row-gap: 2em;
+      background-color: #fff;
+      margin: 0 auto;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-areas:
+        "intro-text intro-text intro-text . . ."
+        ". . . . . ."
+        ". . . . . ."
+        "screens-img-a screens-img-a screens-img-a screens-img-a screens-desc screens-desc"
+        "screens-img-a screens-img-a screens-img-a screens-img-a screens-desc screens-desc"
+        "screens-img-b screens-img-b screens-img-b screens-img-b screens-desc screens-desc"
+        "screens-img-b screens-img-b screens-img-b screens-img-b . ."
+        "screens-img-c screens-img-c screens-img-c screens-img-c . ."
+        "screens-img-c screens-img-c screens-img-c screens-img-c . ."
+        ". . . . . ."
+        ". . . . . ."
+        "ob-img-a ob-img-a ob-img-a ob-img-a ob-desc ob-desc"
+        "ob-img-b ob-img-b ob-img-b ob-img-b ob-desc ob-desc"
+        ". . . . . ."
+        ". . . . . ."
+        "p-img-a p-img-a p-img-a p-img-a p-desc p-desc"
+        "p-img-b p-img-b p-img-b p-img-b p-desc p-desc"
+        ". . . . . ."
+        ". . . . . ."
+        "potential-text potential-text potential-text . . ."
+        "potential-img potential-img potential-img potential-desc potential-desc potential-desc"
+        ". . . . . ."
+        ". . . . . ."
+        "prior-work-text prior-work-text prior-work-text . . ."
+        "cam-proj-container cam-proj-container frames-proj-container frames-proj-container ambient-timer-proj-container ambient-timer-proj-container"
+        "hovermarks-proj-container hovermarks-proj-container awesome-box-proj-container awesome-box-proj-container thelibrary-fm-timer-proj-container thelibrary-fm-timer-proj-container"
+        "pyfav-proj-container pyfav-proj-container three60-proj-container three60-proj-container . .";
+    }
+
+    .intro-text {
+      grid-area: intro-text;
+    }
+
+    canvas {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      display: block;
+      background-color: #fff;
+      filter: drop-shadow(0 0 0.2em #bbb);
+    }
+
+    .img-desc {
+      color: #999;
+      margin-top: 1em;
+      font-size: 0.85em;
+    }
+
+    .screens-desc {
+      grid-area: screens-desc;
+    }
+
+    .screens-img-a {
+      grid-area: screens-img-a;
+    }
+
+    .screens-img-b {
+      grid-area: screens-img-b;
+    }
+
+    .screens-img-c {
+      grid-area: screens-img-c;
+    }
+
+    .ob-desc {
+      grid-area: ob-desc;
+    }
+
+    .ob-img-a {
+      grid-area: ob-img-a;
+    }
+
+    .ob-img-b {
+      grid-area: ob-img-b;
+    }
+
+    .p-desc {
+      grid-area: p-desc;
+    }
+
+    .p-img-a {
+      grid-area: p-img-a;
+    }
+
+    .p-img-b {
+      grid-area: p-img-b;
+    }
+
+    .potential-text {
+      grid-area: potential-text;
+    }
+
+    .potential-desc {
+      grid-area: potential-desc;
+    }
+
+    .potential-img {
+      grid-area: potential-img;
+    }
+
+    .prior-work-text {
+        grid-area: prior-work-text;
+    }
+
+
+
+    .intro-text {
+        grid-area: intro-text;
+        max-width: 45rem;
+    }
+
+    .cam-proj-container {
+        grid-area: cam-proj-container;
+    }
+
+    .frames-proj-container {
+        grid-area: frames-proj-container;
+    }
+
+    .ambient-timer-proj-container {
+        grid-area: ambient-timer-proj-container;
+    }
+
+    .hovermarks-proj-container {
+        grid-area: hovermarks-proj-container;
+    }
+
+    .awesome-box-proj-container {
+        grid-area: awesome-box-proj-container;
+    }
+
+    .thelibrary-fm-timer-proj-container {
+        grid-area: thelibrary-fm-timer-proj-container;
+    }
+
+    .pyfav-proj-container {
+        grid-area: pyfav-proj-container;
+    }
+
+    .three60-proj-container {
+        grid-area: three60-proj-container;
+    }
+
+    .project-title {
+        font-size: 1.3em;
+        line-height: 1.5em;
+        margin-right: 1em;
+    }
+
+
+    img {
+        height: auto;
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+
+
+
+    @media only screen and (max-width: 900px) {
+
+    }
+}

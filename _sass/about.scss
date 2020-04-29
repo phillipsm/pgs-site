@@ -1,0 +1,43 @@
+.about-page {
+
+    .container {
+      max-width: 1100px;
+      display: grid;
+      grid-column-gap: 2em;
+      grid-row-gap: 2em;
+      background-color: #fff;
+      color: #444;
+      margin: 0 auto;
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-areas:
+      "intro-text intro-text intro-text intro-text . . . ."
+      "about-img-a about-img-a about-img-a about-img-a about-desc about-desc about-desc ."
+      "about-img-b about-img-b about-img-b about-img-b about-desc about-desc about-desc .";
+    }
+
+    .intro-text {
+        grid-area: intro-text;
+    }
+
+    .about-desc {
+        grid-area: about-desc;
+    }
+
+    .about-img-a {
+        grid-area: about-img-a;
+    }
+
+    .about-img-b {
+        grid-area: about-img-b;
+    }
+
+    @media only screen and (max-width: 900px)  {
+        .container {
+            grid-template-areas:
+                "intro-text intro-text intro-text intro-text intro-text intro-text intro-text intro-text"
+                "about-img-a about-img-a about-img-a about-img-a about-img-a about-img-a about-img-a about-img-a"
+                "about-desc about-desc about-desc about-desc about-desc about-desc about-desc about-desc"
+                "about-img-b about-img-b about-img-b about-img-b about-img-b about-img-b about-img-b about-img-b";
+        }
+    }
+}
