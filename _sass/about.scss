@@ -8,11 +8,11 @@
       background-color: #fff;
       color: #444;
       margin: 0 auto;
-      grid-template-columns: repeat(8, 1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-template-areas:
-      "intro-text intro-text intro-text intro-text . . . ."
-      "about-img-a about-img-a about-img-a about-img-a about-desc about-desc about-desc ."
-      "about-img-b about-img-b about-img-b about-img-b about-desc about-desc about-desc .";
+      "intro-text intro-text intro-text . . ."
+      "about-img-a about-img-a about-img-a about-img-a about-desc about-desc"
+      "about-img-b about-img-b about-img-b about-img-b about-desc about-desc";
     }
 
     .intro-text {
@@ -34,10 +34,10 @@
     @media only screen and (max-width: 900px)  {
         .container {
             grid-template-areas:
-                "intro-text intro-text intro-text intro-text intro-text intro-text intro-text intro-text"
-                "about-img-a about-img-a about-img-a about-img-a about-img-a about-img-a about-img-a about-img-a"
-                "about-desc about-desc about-desc about-desc about-desc about-desc about-desc about-desc"
-                "about-img-b about-img-b about-img-b about-img-b about-img-b about-img-b about-img-b about-img-b";
+                "intro-text intro-text intro-text intro-text intro-text intro-text"
+                "about-img-a about-img-a about-img-a about-img-a about-img-a about-img-a"
+                "about-desc about-desc about-desc about-desc about-desc about-desc"
+                "about-img-b about-img-b about-img-b about-img-b about-img-b about-img-b";
         }
     }
 }

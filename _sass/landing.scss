@@ -10,27 +10,27 @@ landing page styling
   background-color: #fff;
   color: #444;
   margin: 0 auto;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-template-areas:
-    "intro-text intro-text intro-text intro-text . . . ."
-    ". . . . . . . ."
-    "svc-img svc-img svc-img svc-img svc-img svc-img svc-img svc-img"
-    "svc-title svc-desc svc-desc . . . . ."
-    ". . . . . . . ."
-    "goods-img goods-img goods-img goods-img goods-img goods-img goods-img goods-img"
-    "goods-title goods-desc goods-desc . . . . .";}
+    "intro-text intro-text intro-text . . ."
+    ". . . . . ."
+    "svc-img svc-img svc-img svc-img svc-img svc-img"
+    "svc-title svc-desc svc-desc . . ."
+    ". . . . . ."
+    "goods-img goods-img goods-img goods-img goods-img goods-img"
+    "goods-title goods-desc goods-desc . . .";}
 
 @media only screen and (max-width: 900px)  {
     .container {
 
         grid-template-areas:
-            "intro-text intro-text intro-text intro-text intro-text intro-text intro-text intro-text"
-            ". . . . . . . ."
-            "svc-img svc-img svc-img svc-img svc-img svc-img svc-img svc-img"
-            "svc-title svc-desc svc-desc svc-desc svc-desc svc-desc svc-desc svc-desc"
-            ". . . . . . . ."
-            "goods-img goods-img goods-img goods-img goods-img goods-img goods-img goods-img"
-            "goods-title goods-desc goods-desc goods-desc goods-desc goods-desc goods-desc .";
+            "intro-text intro-text intro-text intro-text intro-text intro-text"
+            ". . . . . ."
+            "svc-img svc-img svc-img svc-img svc-img svc-img"
+            "svc-title svc-desc svc-desc svc-desc svc-desc svc-desc"
+            ". . . . . ."
+            "goods-img goods-img goods-img goods-img goods-img goods-img"
+            "goods-title goods-desc goods-desc goods-desc goods-desc goods-desc";
     }
 }
 

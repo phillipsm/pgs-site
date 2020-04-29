@@ -8,10 +8,10 @@
       background-color: #fff;
       color: #444;
       margin: 0 auto;
-      grid-template-columns: repeat(8, 1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-template-areas:
-      "intro-text intro-text intro-text intro-text . . . ."
-      "contact-img-a contact-img-a contact-img-a contact-img-a contact-img-a contact-desc contact-desc contact-desc";
+      "intro-text intro-text intro-text . . ."
+      "contact-img-a contact-img-a contact-img-a contact-img-a contact-desc contact-desc";
     }
 
     .intro-text {
