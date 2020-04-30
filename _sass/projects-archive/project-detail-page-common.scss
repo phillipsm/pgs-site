@@ -1,7 +1,9 @@
 .project-details {
 
-    .intro-text {
-        grid-area: intro-text;
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
     }
 
     .img-desc {
