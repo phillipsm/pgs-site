@@ -168,6 +168,46 @@
 
 
     @media only screen and (max-width: 900px) {
-
+        .container {
+          display: grid;
+          grid-column-gap: 2em;
+          grid-row-gap: 2em;
+          margin: 0 auto;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-areas:
+            "intro-text intro-text"
+            ". ."
+            ". ."
+            "screens-img-a screens-img-a"
+            "screens-img-b screens-img-b"
+            "screens-desc screens-desc"
+            ". ."
+            ". ."
+            "ob-img-a ob-img-a"
+            "ob-img-b ob-img-b"
+            "ob-desc ob-desc"
+            ". ."
+            ". ."
+            "p-img-a p-img-a"
+            "p-img-b p-img-b"
+            "p-img-c p-img-c"
+            "p-desc p-desc"
+            ". ."
+            ". ."
+            "potential-text potential-text"
+            
+            "potential-img potential-img"
+            "potential-desc potential-desc"
+            ". ."
+            ". ."
+            "prior-work-text prior-work-text"
+            "cam-proj-container cam-proj-container"
+            "frames-proj-container frames-proj-container"
+            "ambient-timer-proj-container ambient-timer-proj-container"
+            "hovermarks-proj-container hovermarks-proj-container"
+            "awesome-box-proj-container awesome-box-proj-container"
+            "thelibrary-fm-timer-proj-container thelibrary-fm-timer-proj-container"
+            "pyfav-proj-container pyfav-proj-container";
+        }
     }
-}
+} // page styling wrapper
