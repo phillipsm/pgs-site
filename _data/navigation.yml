@@ -1,8 +1,8 @@
-- name: Contact
-  link: /contact
+- name: Projects
+  link: /projects
 - name: About
   link: /about
 - name: OpenBooth
   link: //OpenBooth.store
-- name: Projects
-  link: /projects
+- name: Contact
+  link: /contact

@@ -23,9 +23,18 @@ const keep_moving_sketch = ( sketch ) => {
             sketch.stroke( c );
             sketch.fill( c );
 
-            sketch.ellipse( x, y, 5, 5 );
+            sketch.ellipse( x, y, sketch_height*.01, sketch_height * .01 );
             x += 2;
             y = sketch.random( y - 4, y + 4 );
+
+            if ( y >= sketch_height ) {
+                y = sketch_height;
+            }
+
+            if ( y <= 0 ) {
+                y = 0;
+            }
+
         } else {
             x = 0;
             y = sketch.random( 0, sketch_height );

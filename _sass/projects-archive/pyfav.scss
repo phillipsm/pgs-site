@@ -12,19 +12,12 @@
       "intro-text intro-text intro-text . . ."
       ". . . . . ."
       ". . . . . ."
-      "img-a img-a img-a img-a desc desc";
+      "img-a img-a img-a img-a desc desc"
+      "how-to-use how-to-use how-to-use how-to-use desc desc";
     }
-
 
     .intro-text {
         grid-area: intro-text;
-    }
-
-
-    .img-desc {
-        color: #999;
-        margin-top: 1em;
-        font-size: .85em;
     }
 
     .desc {
@@ -35,22 +28,17 @@
         grid-area: img-a;
     }
 
-    .img-b {
-        grid-area: img-b;
+    .how-to-use {
+        grid-area: how-to-use;
     }
 
-    .img-c {
-        grid-area: img-c;
-    }
-
-    .desc-title {
-        font-size: 1.1em;
-        padding-top: 1em;
-        margin-bottom: .7em;
-    }
-
-    .body-text {
-        margin-bottom: .4em;
+    pre {
+        background-color: #EDFFF6;
+        font-family: monospace, monospace;
+        font-size: .9em;
+        border: 1px solid #ddd;
+        padding: 1rem;
+        margin: 2rem 0;
     }
 
     @media only screen and (max-width: 900px) {
