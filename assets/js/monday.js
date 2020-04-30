@@ -9,7 +9,7 @@ const monday_sketch = ( sketch ) => {
 
 
     sketch.setup = () => {
-        sketch_width = document.getElementById('canvas-container-c').clientWidth;
+        sketch_width = document.getElementById('canvas-container-b').clientWidth;
         sketch_height = sketch_width * (2/3);
         sketch.createCanvas(sketch_width, sketch_height);
         sketch.noFill();
@@ -62,7 +62,7 @@ const monday_sketch = ( sketch ) => {
 
         // We use this js file in our services page and as a fullscreen
         // Calculate the width and height of our canvas here
-        sketch_width = document.getElementById('canvas-container-c').clientWidth;
+        sketch_width = document.getElementById('canvas-container-b').clientWidth;
         if (document.getElementsByClassName('services-page')[0]) {
             sketch_height = sketch_width * (2/3);
         } else {
@@ -72,4 +72,4 @@ const monday_sketch = ( sketch ) => {
 
 };
 
-new p5(monday_sketch, 'canvas-container-c');
+new p5(monday_sketch, 'canvas-container-b');

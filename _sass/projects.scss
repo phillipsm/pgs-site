@@ -1,4 +1,4 @@
-.services-landing {
+.projects-landing {
     .container {
       max-width: 1100px;
       display: grid;
@@ -14,9 +14,7 @@
         "screens-img-a screens-img-a screens-img-a screens-img-a screens-desc screens-desc"
         "screens-img-a screens-img-a screens-img-a screens-img-a screens-desc screens-desc"
         "screens-img-b screens-img-b screens-img-b screens-img-b screens-desc screens-desc"
-        "screens-img-b screens-img-b screens-img-b screens-img-b . ."
-        "screens-img-c screens-img-c screens-img-c screens-img-c . ."
-        "screens-img-c screens-img-c screens-img-c screens-img-c . ."
+        "screens-img-b screens-img-b screens-img-b screens-img-b screens-desc screens-desc"
         ". . . . . ."
         ". . . . . ."
         "ob-img-a ob-img-a ob-img-a ob-img-a ob-desc ob-desc"
@@ -25,6 +23,7 @@
         ". . . . . ."
         "p-img-a p-img-a p-img-a p-img-a p-desc p-desc"
         "p-img-b p-img-b p-img-b p-img-b p-desc p-desc"
+        "p-img-c p-img-c p-img-c p-img-c p-desc p-desc"
         ". . . . . ."
         ". . . . . ."
         "potential-text potential-text potential-text . . ."
@@ -36,7 +35,7 @@
         "prior-work-text prior-work-text prior-work-text . . ."
         "cam-proj-container cam-proj-container frames-proj-container frames-proj-container ambient-timer-proj-container ambient-timer-proj-container"
         "hovermarks-proj-container hovermarks-proj-container awesome-box-proj-container awesome-box-proj-container thelibrary-fm-timer-proj-container thelibrary-fm-timer-proj-container"
-        "pyfav-proj-container pyfav-proj-container three60-proj-container three60-proj-container . .";
+        "pyfav-proj-container pyfav-proj-container . . . .";
     }
 
     .intro-text {
@@ -70,10 +69,6 @@
       grid-area: screens-img-b;
     }
 
-    .screens-img-c {
-      grid-area: screens-img-c;
-    }
-
     .ob-desc {
       grid-area: ob-desc;
     }
@@ -96,6 +91,10 @@
 
     .p-img-b {
       grid-area: p-img-b;
+    }
+
+    .p-img-c {
+      grid-area: p-img-c;
     }
 
     .potential-text {

@@ -12,11 +12,6 @@
     {% seo %}
 
     <link rel="stylesheet" href="/assets/css/styles.css">
-    <link rel="stylesheet" href="/assets/css/landing.css">
-
-    {% if page.local_page_style_name %}
-        <link href="/assetts/css/{{ page.local_page_style_name }}" rel="stylesheet">
-    {% endif %}
 
     {% for item in page.local_page_js %}
         <script src="/assets/js/{{ item }}"></script>
