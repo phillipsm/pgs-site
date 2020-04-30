@@ -6,11 +6,11 @@ const keep_moving_sketch = ( sketch ) => {
 
 
     sketch.setup = () => {
-        sketch_width = document.getElementById('canvas-container-c').clientWidth;
+        sketch_width = document.getElementById('canvas-container-a').clientWidth;
         sketch_height = sketch_width * (2/3);
         sketch.createCanvas(sketch_width, sketch_height);
         x = 0;
-        y = sketch.random( 0, sketch_height );
+        y = sketch.random( sketch_height * .2, sketch_height * .3 );
         sketch.get_next_colors();
 
     };

@@ -11,7 +11,8 @@
       grid-template-columns: repeat(6, 1fr);
       grid-template-areas:
       "intro-text intro-text intro-text . . ."
-      "contact-img-a contact-img-a contact-img-a contact-img-a contact-desc contact-desc";
+      "contact-img-a contact-img-a contact-img-a contact-img-a contact-desc contact-desc"
+      "contact-img-b contact-img-b contact-img-b contact-img-b contact-desc contact-desc";
     }
 
     .intro-text {
@@ -24,6 +25,10 @@
 
     .contact-img-a {
         grid-area: contact-img-a;
+    }
+
+    .contact-img-b {
+        grid-area: contact-img-b;
     }
 
     @media only screen and (max-width: 900px)  {

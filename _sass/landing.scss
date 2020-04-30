@@ -18,20 +18,16 @@ landing page styling
     "svc-title svc-desc svc-desc . . ."
     ". . . . . ."
     "goods-img goods-img goods-img goods-img goods-img goods-img"
-    "goods-title goods-desc goods-desc . . .";}
+    "goods-title goods-desc goods-desc . . .";
+}
 
-@media only screen and (max-width: 900px)  {
-    .container {
-
-        grid-template-areas:
-            "intro-text intro-text intro-text intro-text intro-text intro-text"
-            ". . . . . ."
-            "svc-img svc-img svc-img svc-img svc-img svc-img"
-            "svc-title svc-desc svc-desc svc-desc svc-desc svc-desc"
-            ". . . . . ."
-            "goods-img goods-img goods-img goods-img goods-img goods-img"
-            "goods-title goods-desc goods-desc goods-desc goods-desc goods-desc";
-    }
+canvas {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  background: #fff;
+  filter: drop-shadow(0 0 0.2em #cdd7ff);
 }
 
 .intro-text {
@@ -59,4 +55,18 @@ landing page styling
 
 .goods-desc {
     grid-area: goods-desc;
+}
+
+@media only screen and (max-width: 900px)  {
+    .container {
+
+        grid-template-areas:
+            "intro-text intro-text intro-text intro-text intro-text intro-text"
+            ". . . . . ."
+            "svc-img svc-img svc-img svc-img svc-img svc-img"
+            "svc-title svc-desc svc-desc svc-desc svc-desc svc-desc"
+            ". . . . . ."
+            "goods-img goods-img goods-img goods-img goods-img goods-img"
+            "goods-title goods-desc goods-desc goods-desc goods-desc goods-desc";
+    }
 }
