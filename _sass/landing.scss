@@ -8,7 +8,6 @@ landing page styling
   grid-column-gap: 1em;
   grid-row-gap: 2em;
   background-color: #fff;
-  color: #444;
   margin: 0 auto;
   grid-template-columns: repeat(6, 1fr);
   grid-template-areas:
@@ -27,7 +26,7 @@ canvas {
   object-fit: cover;
   display: block;
   background: #fff;
-  filter: drop-shadow(0 0 0.2em #cdd7ff);
+  filter: drop-shadow(0 0 0.2em #ddd);
 }
 
 .intro-text {

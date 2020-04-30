@@ -8,13 +8,23 @@
   src: url("/assets/fonts/GT-Walsheim-Medium.woff2") format("woff2"), url("/assets/fonts/GT-Walsheim-Medium.woff") format("woff");
 }
 
+// our base PGS colors
+$cherry: #ee2348;
+$sky: #b6e2e9;
+$french_vanilla: #fcf3b0;
+$summer_nights: #15133f;
+
+$cherry_lighter: lighten( $cherry, 10% );
+$text_color: #444;
+
+
 html {
   font-size: 13px;
 }
 
 body {
   background-color: #fff;
-  color: #444;
+  color: $text_color;
   font-size: 1.4rem;
   font-family: 'Walsheim Regular', sans-serif;
   margin: 6rem 6rem 0 6rem;
@@ -25,18 +35,18 @@ a, a:link, a:hover, a:active, a:visited, a:focus {
 }
 
 a:link {
-    border-bottom: .02em solid #ee2348;
-    color: #444;
+    border-bottom: .02em solid $cherry;
+    color: $text_color;
 
 }
 a:hover {
     color: #444;
-    border-bottom: .1em solid #ee2348;
+    border-bottom: .1em solid $cherry;
 }
 
 a:visited {
-    border-bottom: .02em solid #ee2348;
-    color: #444;
+    border-bottom: .02em solid $cherry;
+    color: $text_color;
 }
 
 img {
@@ -51,15 +61,15 @@ img {
 }
 
 .highlight-inline {
-  color: #ee2348;
+  color: $cherry;
 }
 
 .highlight-inline:link {
-  color: #ee2348;
+  color: $cherry;
 }
 
 .highlight-inline:visited {
-  color: #ee2348;
+  color: $cherry;
 }
 
 p {
@@ -72,7 +82,7 @@ p {
 }
 
 .btn {
-    background-color: #ee2348;
+    background-color: $cherry;
     color: #fff;
     border-radius: 0;
     text-decoration: none;
@@ -94,7 +104,7 @@ p {
 
 .btn:hover {
     border: none;
-    filter: drop-shadow(.1em .1em .2em #f3627c);
+    filter: drop-shadow(.1em .1em .2em $cherry_lighter);
 }
 
 .button-container {
@@ -103,14 +113,13 @@ p {
 
 /* footer */
 
-
 footer .container {
   max-width: 1100px;
   display: grid;
   grid-column-gap: 1em;
   grid-row-gap: 2em;
   background-color: #fff;
-  color: #444;
+  color: $text_color;
   margin: 0 auto;
   grid-template-columns: repeat(6, 1fr);
   grid-template-areas:
