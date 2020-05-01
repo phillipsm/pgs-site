@@ -6,6 +6,9 @@ const keep_moving_sketch = ( sketch ) => {
 
 
     sketch.setup = () => {
+        var elem = document.querySelector('#canvas-container-a img');
+        elem.remove();
+
         sketch_width = document.getElementById('canvas-container-a').clientWidth;
         sketch_height = sketch_width * (2/3);
         sketch.createCanvas(sketch_width, sketch_height);

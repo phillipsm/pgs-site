@@ -20,15 +20,6 @@ landing page styling
     "goods-title goods-desc goods-desc . . .";
 }
 
-canvas {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  display: block;
-  background: #fff;
-  filter: drop-shadow(0 0 0.2em #ddd);
-}
-
 .intro-text {
     grid-area: intro-text;
 }

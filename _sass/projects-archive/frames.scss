@@ -16,16 +16,8 @@
       "img-b img-b img-c img-c desc desc";
     }
 
-
     .intro-text {
         grid-area: intro-text;
-    }
-
-
-    .img-desc {
-        color: #999;
-        margin-top: 1em;
-        font-size: .85em;
     }
 
     .desc {
@@ -42,16 +34,6 @@
 
     .img-c {
         grid-area: img-c;
-    }
-
-    .desc-title {
-        font-size: 1.1em;
-        padding-top: 1em;
-        margin-bottom: .7em;
-    }
-
-    .body-text {
-        margin-bottom: .4em;
     }
 
     @media only screen and (max-width: 900px) {
