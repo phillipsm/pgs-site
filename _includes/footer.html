@@ -8,13 +8,14 @@
                 <li>
                     {% for item in site.data.navigation %}
                     <p>
-                        {% if page.url contains item.link %}
+                        {% if page.url contains item.link and page.dir == '/'%}
                             {{ item.name }}
                         {% else %}
-                            <a href="{{ item.link }}" {% if item.name == 'OpenBooth' %}target="_blank"{% endif %}>{{ item.name }}</a>
+                            <a href="{{ item.link }}" {% if item.new_window == true %}target="_blank"{% endif %}>{{ item.name }}</a>
                         {% endif %}
                     </p>
                     {% endfor %}
+                </li>
             </ul>
         </div>
     </div>

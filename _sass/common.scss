@@ -168,19 +168,19 @@ ul p {
 }
 
 footer {
-    margin: 12rem 0;
+    margin: 12rem;
 }
 
 /* /footer */
 
 @media only screen and (max-width: 900px)  {
-
-    html {
-      font-size: 12px;
+    body {
+      font-size: 1.3rem;
+      margin: 2rem;
     }
 
-    body {
-        margin: 2rem;
+    .body-text {
+        font-size: 1.7rem;
     }
 
     .container {
@@ -188,8 +188,11 @@ footer {
         grid-row-gap: .5em;
     }
 
-    footer .container {
+    footer {
+        margin: 6rem 0;
+    }
 
+    footer .container {
       grid-template-areas:
         ". footer-logo footer-logo footer-logo footer-nav footer-nav footer-nav .";
     }

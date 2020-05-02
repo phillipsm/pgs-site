@@ -13,7 +13,8 @@
       ". . . . . ."
       ". . . . . ."
       "img-a img-a img-a img-a desc desc"
-      "img-b img-b img-c img-c desc desc";
+      "img-b img-b img-c img-c desc desc"
+      "phone-frames-desc phone-frames-desc phone-frames-desc phone-frames-desc desc desc";
     }
 
     .intro-text {
@@ -36,20 +37,47 @@
         grid-area: img-c;
     }
 
+    .phone-frames-desc {
+        grid-area: phone-frames-desc;
+    }
+
+    .img-b, .img-c {
+        max-width: 75%;
+        align-self: center;
+    }
+
+    .img-b {
+        justify-self: end;
+    }
+
+    .img-desc {
+        margin-top: 2rem;
+    }
+
+    .phone-frames-desc {
+        margin-top: -3rem;
+    }
+
     @media only screen and (max-width: 900px) {
+
         .container {
-          grid-template-areas:
-          "intro-text intro-text intro-text intro-text intro-text intro-text"
-          ". . . . . ."
-          ". . . . . ."
-          "img-a img-a img-a img-a img-a img-a"
-          "img-b img-b img-b img-b img-c img-c"
-          "img-d img-d img-d img-d img-e img-e"
-          "img-f img-f img-f img-f img-f img-f"
-          "img-g img-g img-g img-g img-g img-g"
-          "img-h img-h img-h img-h img-h img-h"
-          "img-i img-i img-i img-i img-i img-i"
-          "desc desc desc desc desc desc";
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 1em;
+            grid-row-gap: 1em;
+            grid-template-areas:
+            "intro-text intro-text"
+            ". ."
+            ". ."
+            "img-a img-a"
+            ". ."
+            "img-b img-c"
+            "img-d img-e"
+            "phone-frames-desc phone-frames-desc"
+            "desc desc";
+        }
+
+        .phone-frames-desc {
+            margin-top: -2rem;
         }
     }
 

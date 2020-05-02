@@ -7,7 +7,6 @@ landing page styling
   display: grid;
   grid-column-gap: 1em;
   grid-row-gap: 2em;
-  background-color: #fff;
   margin: 0 auto;
   grid-template-columns: repeat(6, 1fr);
   grid-template-areas:
@@ -49,12 +48,16 @@ landing page styling
 
 @media only screen and (max-width: 900px)  {
     .container {
-
+        grid-row-gap: 1em;
         grid-template-areas:
             "intro-text intro-text intro-text intro-text intro-text intro-text"
             ". . . . . ."
+            ". . . . . ."
             "svc-img svc-img svc-img svc-img svc-img svc-img"
             "svc-title svc-desc svc-desc svc-desc svc-desc svc-desc"
+            ". . . . . ."
+            ". . . . . ."
+            ". . . . . ."
             ". . . . . ."
             "goods-img goods-img goods-img goods-img goods-img goods-img"
             "goods-title goods-desc goods-desc goods-desc goods-desc goods-desc";

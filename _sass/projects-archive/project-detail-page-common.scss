@@ -16,10 +16,13 @@
         font-size: 1.1em;
         padding-top: 1em;
         margin-bottom: .7em;
+        font-family: 'Walsheim Medium', sans-serif;
     }
 
-    .body-text {
-        margin-bottom: .4em;
+    .desc-title:first-of-type {
+        font-size: 1.7em;
+        font-family: 'Walsheim Regular', sans-serif;
+        margin-bottom: .3em;
     }
 
 }

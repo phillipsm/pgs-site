@@ -1,8 +1,12 @@
 - name: Projects
   link: /projects
+
 - name: About
   link: /about
+
 - name: OpenBooth
   link: //OpenBooth.store
+  new_window: true
+
 - name: Contact
   link: /contact

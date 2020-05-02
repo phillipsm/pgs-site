@@ -45,18 +45,19 @@
 
     @media only screen and (max-width: 900px) {
         .container {
+          grid-template-columns: repeat(2, 1fr);
+          grid-column-gap: 1em;
+          grid-row-gap: 1em;
           grid-template-areas:
-          "intro-text intro-text intro-text intro-text intro-text intro-text"
-          ". . . . . ."
-          ". . . . . ."
-          "img-a img-a img-a img-a img-a img-a"
-          "img-b img-b img-b img-b img-c img-c"
-          "img-d img-d img-d img-d img-e img-e"
-          "img-f img-f img-f img-f img-f img-f"
-          "img-g img-g img-g img-g img-g img-g"
-          "img-h img-h img-h img-h img-h img-h"
-          "img-i img-i img-i img-i img-i img-i"
-          "desc desc desc desc desc desc";
+          "intro-text intro-text"
+          ". ."
+          ". ."
+          "img-a img-a"
+          "img-b img-b"
+          "img-c img-c"
+          "img-d img-d"
+          "img-e img-e"
+          "desc desc";
         }
     }
 
