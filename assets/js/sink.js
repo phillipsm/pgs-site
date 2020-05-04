@@ -1,44 +1,60 @@
 const sink_sketch = ( sketch ) => {
 
-    let sketch_width, sketch_height;
+    // Store our sketch dimensions and dom element here in case
+    // we need to resize
+    let sketch_width, sketch_height, canvas_container_element;
+    let stroke_length_range;
 
     sketch.setup = () => {
-        var elem = document.querySelector('#canvas-container-a img');
-        elem.remove();
 
-        sketch_width = document.getElementById('canvas-container-a').clientWidth;
-        sketch_height = sketch_width * (2/3);
+        canvas_container_element = document.getElementById('canvas-container-a')
+        sketch.setDimensions();
+
+        // Remove our placeholder image after we've loaded the dom
+        // and are ready to draw. Then, create our cavnas
+        placeholder_img = document.querySelector('#canvas-container-a img');
+        placeholder_img.remove();
         sketch.createCanvas(sketch_width, sketch_height);
-        sketch.stroke(100);
-        sketch.frameRate(5);
+
+        sketch.frameRate(8);
+
     };
 
     sketch.draw = () => {
+
         let x, y, x2, y2;
 
-        x = sketch.random(-30, sketch_width);
-        y = sketch.random(-30, sketch_height);
-        x2 = sketch.random(x-25, x+25);
-        y2 = sketch.random(y-25, y+25);
+        x = sketch.random( -stroke_length_range, sketch_width );
+        y = sketch.random( -stroke_length_range, sketch_height );
+        x2 = sketch.random( x-stroke_length_range, x+stroke_length_range );
+        y2 = sketch.random( y-stroke_length_range, y+stroke_length_range );
+
+
+        sketch.strokeWeight( sketch.random( sketch_width/1000, sketch_width/2000 ) );
 
         sketch.line(x, y, x2, y2);
+
     }
 
     sketch.windowResized = () => {
-        sketch.setDimensions();
-        sketch.resizeCanvas(sketch_width, sketch_height);
+
+        // Kludge: ios seems to fire resize() during scrolling
+        if ( sketch_width !== canvas_container_element.clientWidth ) {
+            sketch.setDimensions();
+            sketch.resizeCanvas( sketch_width, sketch_height );
+        }
+
     }
 
     sketch.setDimensions = () => {
 
-        // We use this js file in our services page and as a fullscreen
+        // We use this to help with resizing and fullscree displays
         // Calculate the width and height of our canvas here
-        sketch_width = document.getElementById('canvas-container-a').clientWidth;
-        if (document.getElementsByClassName('services-page')[0]) {
-            sketch_height = sketch_width * (2/3);
-        } else {
-            sketch_height = window.innerHeight;
-        }
+        // Lets keep a 3:2 aspect ratio
+        sketch_width = canvas_container_element.clientWidth;
+        sketch_height = sketch_width * (2/3);
+
+        stroke_length_range = sketch_width/30;
     }
 
 };
