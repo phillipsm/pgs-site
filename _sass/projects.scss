@@ -12,9 +12,10 @@
         ". . . . . ."
         "screens-img-a screens-img-a screens-img-a screens-img-a screens-desc screens-desc"
         "screens-img-a screens-img-a screens-img-a screens-img-a screens-desc screens-desc"
-        "screens-desc-container screens-desc-container screens-desc-container fullscreen screens-desc screens-desc"
+        "screens-a-desc-container screens-a-desc-container screens-a-desc-container fullscreen-a screens-desc screens-desc"
         "screens-img-b screens-img-b screens-img-b screens-img-b screens-desc screens-desc"
         "screens-img-b screens-img-b screens-img-b screens-img-b screens-desc screens-desc"
+        "screens-b-desc-container screens-b-desc-container screens-b-desc-container fullscreen-b screens-desc screens-desc"
         ". . . . . ."
         ". . . . . ."
         "ob-img-a ob-img-a ob-img-a ob-img-a ob-desc ob-desc"
@@ -60,20 +61,32 @@
       grid-area: screens-img-a;
     }
 
-    .screens-desc-container {
-        grid-area: screens-desc-container;
+    .screens-a-desc-container {
+        grid-area: screens-a-desc-container;
+    }
 
-        margin-top: -2rem;
+    .screens-b-desc-container {
+        grid-area: screens-b-desc-container;
+    }
+
+    .screens-a-desc-container, .screens-b-desc-container {
+        margin-top: -1.2rem;
         .img-desc {
             font-size: 0.85em;
         }
     }
 
-    .fullscreen {
-        grid-area: fullscreen;
+    .fullscreen-a {
+        grid-area: fullscreen-a;
+    }
 
-        margin-top: -2rem;
+    .fullscreen-b {
+        grid-area: fullscreen-b;
+    }
 
+    .fullscreen-a, .fullscreen-b {
+        margin-top: -1.2rem;
+        justify-self: end;
         a {
             margin: 0;
             color: #888;
@@ -177,7 +190,7 @@
     }
 
 
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 600px) {
         .container {
           grid-row-gap: 1em;
           grid-template-columns: repeat(2, 1fr);
@@ -186,10 +199,11 @@
             ". ."
             ". ."
             "screens-img-a screens-img-a"
+            "screens-a-desc-container screens-a-desc-container"
             "screens-img-b screens-img-b"
+            "screens-b-desc-container screens-b-desc-container"
             ". ."
             "screens-desc screens-desc"
-            ". ."
             ". ."
             ". ."
             ". ."
@@ -236,9 +250,17 @@
         }
 
         .img-desc {
-
           font-size: 0.65em;
         }
+
+        .fullscreen-a {
+            display: none;
+        }
+
+        .fullscreen-b {
+            display: none;
+        }
+
 
     } // media query
 } // page styling wrapper

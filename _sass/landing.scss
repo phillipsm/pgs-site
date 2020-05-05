@@ -67,7 +67,7 @@ landing page styling
     grid-area: goods-desc;
 }
 
-@media only screen and (max-width: 900px)  {
+@media only screen and (max-width: 600px)  {
     .container {
         grid-row-gap: 1em;
         grid-template-areas:

@@ -1,7 +1,6 @@
 html, body {
     margin: 0 !important;
     padding: 0 !important;
-    overflow: hidden !important;
 }
 
 #controls {
@@ -10,7 +9,7 @@ html, body {
     z-index: 577;
     position: absolute;
     display: block;
-    bottom: 4rem;
+    bottom: 3rem;
     right: 6rem;
 
     .btn {
@@ -28,6 +27,9 @@ html, body {
         cursor: pointer;
     }
 
-
+    .monday {
+        border: .2rem solid $cherry;
+        color: $cherry;
+    }
 
 }

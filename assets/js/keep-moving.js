@@ -85,10 +85,14 @@ const keep_moving_sketch = ( sketch ) => {
 
         // We use this to help with resizing and fullscreen displays
         // Calculate the width and height of our canvas here
-        // Lets keep a 3:2 aspect ratio
+        // Lets keep a 3:2 aspect ratio if we're not in fullscreen
         sketch_width = canvas_container_element.clientWidth;
-        sketch_height = sketch_width * (2/3);
 
+        if ( document.getElementById('controls' ) ) {
+            sketch_height = window.innerHeight;
+        } else {
+            sketch_height = sketch_width * (2/3);
+        }
     }
 
 };
