@@ -27,6 +27,9 @@ body {
   color: $text_color;
   font-size: 1.4rem;
   font-family: 'Walsheim Regular', sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   margin: 6rem 6rem 0 6rem;
 }
 
