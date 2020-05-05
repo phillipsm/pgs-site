@@ -195,6 +195,7 @@
           grid-row-gap: 1em;
           grid-template-columns: repeat(2, 1fr);
           grid-template-areas:
+            ". ."
             "intro-text intro-text"
             ". ."
             ". ."
@@ -207,10 +208,15 @@
             ". ."
             ". ."
             ". ."
+            ". ."
+            ". ."
+            ". ."
             "ob-img-a ob-img-a"
             "ob-img-b ob-img-b"
             ". ."
             "ob-desc ob-desc"
+            ". ."
+            ". ."
             ". ."
             ". ."
             ". ."
@@ -224,7 +230,11 @@
             ". ."
             ". ."
             ". ."
+            ". ."
+            ". ."
             "potential-text potential-text"
+            ". ."
+            ". ."
             "potential-img potential-img"
             ". ."
             "potential-desc potential-desc"
@@ -232,7 +242,10 @@
             ". ."
             ". ."
             ". ."
+            ". ."
+            ". ."
             "prior-work-text prior-work-text"
+            ". ."
             ". ."
             "cam-proj-container cam-proj-container"
             ". ."
@@ -250,7 +263,7 @@
         }
 
         .img-desc {
-          font-size: 0.65em;
+          font-size: 0.85em;
         }
 
         .fullscreen-a {
@@ -261,6 +274,14 @@
             display: none;
         }
 
+        .screens-a-desc-container {
+            margin-top: 0;
+
+        }
+
+        .screens-b-desc-container {
+            margin-top: 0;
+        }
 
     } // media query
 } // page styling wrapper

@@ -28,12 +28,18 @@
     .contact-img-b {
         grid-area: contact-img-b;
     }
+    .contact-img-a, .contact-img-b {
+        img {
+            margin-bottom: 1rem;
+        }
+    }
 
     @media only screen and (max-width: 900px)  {
         .container {
             grid-row-gap: 1em;
             grid-template-columns: repeat(1, 1fr);
             grid-template-areas:
+            "."
             "intro-text"
             "."
             "contact-img-a"

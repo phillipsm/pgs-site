@@ -33,8 +33,12 @@ const sink_sketch = ( sketch ) => {
         x2 = sketch.random( x-stroke_length_range, x+stroke_length_range );
         y2 = sketch.random( y-stroke_length_range, y+stroke_length_range );
 
-
-        sketch.strokeWeight( sketch.random( sketch_width/1000, sketch_width/2000 ) );
+        if ( sketch_width > 1000 ) {
+            sketch.strokeWeight( sketch.random( sketch_width/1000, sketch_width/2000 ) );
+        } else {
+            sketch.strokeWeight( sketch.random( .3, 1.8) )
+        }
+        
         let inter = sketch.map( x, 0, sketch_width, 0, 1 );
         let c = sketch.lerpColor( sketch.color( '#' + sketch.random( available_colors )), sketch.color( '#' + sketch.random( available_colors )), inter );
         sketch.stroke( c );

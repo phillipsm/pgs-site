@@ -29,13 +29,19 @@
         grid-area: about-img-b;
     }
 
-    @media only screen and (max-width: 900px)  {
+    @media only screen and (max-width: 600px)  {
         .container {
+            grid-row-gap: 1em;
+            grid-template-columns: repeat(1, 1fr);
             grid-template-areas:
-                "intro-text intro-text intro-text intro-text intro-text intro-text"
-                "about-img-a about-img-a about-img-a about-img-a about-img-a about-img-a"
-                "about-desc about-desc about-desc about-desc about-desc about-desc"
-                "about-img-b about-img-b about-img-b about-img-b about-img-b about-img-b";
+                "."
+                "intro-text"
+                "."
+                "."
+                "about-img-a"
+                "."
+                "about-desc"
+                "about-img-b";
         }
     }
 }
