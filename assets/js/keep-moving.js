@@ -77,11 +77,14 @@ const keep_moving_sketch = ( sketch ) => {
 
     sketch.windowResized = () => {
 
-        sketch.setDimensions();
-        sketch.resizeCanvas( sketch_width, sketch_height );
-        x = 0;
-        y = sketch.random( 0, sketch_height );
-        sketch.clear();
+        // Kludge: ios seems to fire resize() during scrolling
+        if ( sketch_width !== canvas_container_element.clientWidth ) {
+            sketch.setDimensions();
+            sketch.resizeCanvas( sketch_width, sketch_height );
+            x = 0;
+            y = sketch.random( 0, sketch_height );
+            sketch.clear();
+        }
 
     }
 
