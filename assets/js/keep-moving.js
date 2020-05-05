@@ -2,13 +2,17 @@ const keep_moving_sketch = ( sketch ) => {
 
     // Store our sketch dimensions and dom element here in case
     // we need to resize
-    let sketch_width, sketch_height;
+    let sketch_width, sketch_height, canvas_container_element;
     let x, y, color_a, color_b;
     let available_colors = [ 'f7e8f6', 'f7e8f6', 'e5b0ea', 'bd83ce' ];
 
-    sketch.setup = () => {
+    sketch.preload = () => {
 
         canvas_container_element = document.getElementById('canvas-container-a');
+
+    };
+
+    sketch.setup = () => {
 
         sketch.setDimensions();
 
@@ -124,11 +128,13 @@ document.addEventListener('click', function (event) {
 // we show our cursor and button
 document.addEventListener('mousemove', e => {
 
-    var canvas_element = document.querySelector('body');
-    canvas_element.style.cursor = 'auto';
+    if ( document.fullscreenElement ) {
+        var canvas_element = document.querySelector('body');
+        canvas_element.style.cursor = 'auto';
 
-    var controls_element = document.querySelector('#controls');
-    controls_element.style.display = 'block';
+        var controls_element = document.getElementById('controls');
+        controls_element.style.display = 'block';
+    }
 
 });
 
@@ -136,13 +142,11 @@ document.addEventListener('mousemove', e => {
 function hide_controls() {
 
     if ( document.fullscreenElement ) {
-
         var canvas_element = document.querySelector('body');
         canvas_element.style.cursor = 'none';
 
         var controls_element = document.querySelector('#controls');
         controls_element.style.display = 'none';
-
     }
 
 }

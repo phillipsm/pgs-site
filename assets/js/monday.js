@@ -5,11 +5,15 @@ const monday_sketch = ( sketch ) => {
 
     let message_to_draw = 'SUNDAY MONDAY TUESDAY WEDNESDAY THURSDAY FRIDAY SATURDAY';
     let position_in_message = 0;
-    let sketch_width, sketch_height;
+    let sketch_width, sketch_height, canvas_container_element;
 
-    sketch.setup = () => {
+    sketch.preload = () => {
 
         canvas_container_element = document.getElementById('canvas-container-b');
+
+    };
+
+    sketch.setup = () => {
 
         sketch.setDimensions();
 
@@ -120,11 +124,13 @@ document.addEventListener('click', function (event) {
 // we show our cursor and button
 document.addEventListener('mousemove', e => {
 
-    var canvas_element = document.querySelector('body');
-    canvas_element.style.cursor = 'auto';
+    if ( document.fullscreenElement ) {
+        var canvas_element = document.querySelector('body');
+        canvas_element.style.cursor = 'auto';
 
-    var controls_element = document.querySelector('#controls');
-    controls_element.style.display = 'block';
+        var controls_element = document.querySelector('#controls');
+        controls_element.style.display = 'block';
+    }
 
 });
 

@@ -6,9 +6,13 @@ const sink_sketch = ( sketch ) => {
     let stroke_length_range;
     let available_colors = [ 'f7e8f6', 'f7e8f6', 'e5b0ea', 'bd83ce' ];
 
-    sketch.setup = () => {
+    sketch.preload = () => {
 
         canvas_container_element = document.getElementById('canvas-container-a');
+
+    };
+
+    sketch.setup = () => {
 
         sketch.setDimensions();
 
@@ -38,7 +42,7 @@ const sink_sketch = ( sketch ) => {
         } else {
             sketch.strokeWeight( sketch.random( .3, 1.8) )
         }
-        
+
         let inter = sketch.map( x, 0, sketch_width, 0, 1 );
         let c = sketch.lerpColor( sketch.color( '#' + sketch.random( available_colors )), sketch.color( '#' + sketch.random( available_colors )), inter );
         sketch.stroke( c );
@@ -103,11 +107,13 @@ document.addEventListener('click', function (event) {
 // we show our cursor and button
 document.addEventListener('mousemove', e => {
 
-    var canvas_element = document.querySelector('body');
-    canvas_element.style.cursor = 'auto';
+    if ( document.fullscreenElement ) {
+        var canvas_element = document.querySelector('body');
+        canvas_element.style.cursor = 'auto';
 
-    var controls_element = document.querySelector('#controls');
-    controls_element.style.display = 'block';
+        var controls_element = document.querySelector('#controls');
+        controls_element.style.display = 'block';
+    }
 
 });
 
