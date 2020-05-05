@@ -1,0 +1,33 @@
+html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+}
+
+#controls {
+
+    color: #fff;
+    z-index: 577;
+    position: absolute;
+    display: block;
+    bottom: 4rem;
+    right: 6rem;
+
+    .btn {
+        border: .2rem solid #bd83ce;
+        color: #bd83ce;
+        background-color: #fff;
+    }
+
+    .btn:focus {
+        outline:0;
+    }
+
+    .btn:hover {
+        filter: drop-shadow( .1em .1em .2em lighten( #bd83ce, 10% ) );
+        cursor: pointer;
+    }
+
+
+
+}

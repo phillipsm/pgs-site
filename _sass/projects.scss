@@ -12,6 +12,7 @@
         ". . . . . ."
         "screens-img-a screens-img-a screens-img-a screens-img-a screens-desc screens-desc"
         "screens-img-a screens-img-a screens-img-a screens-img-a screens-desc screens-desc"
+        "screens-desc-container screens-desc-container screens-desc-container fullscreen screens-desc screens-desc"
         "screens-img-b screens-img-b screens-img-b screens-img-b screens-desc screens-desc"
         "screens-img-b screens-img-b screens-img-b screens-img-b screens-desc screens-desc"
         ". . . . . ."
@@ -50,11 +51,6 @@
       filter: drop-shadow(0 0 0.2em #ddd);
     }
 
-    .img-desc {
-      color: #888;
-      margin-top: 1em;
-      font-size: 0.85em;
-    }
 
     .screens-desc {
       grid-area: screens-desc;
@@ -62,6 +58,26 @@
 
     .screens-img-a {
       grid-area: screens-img-a;
+    }
+
+    .screens-desc-container {
+        grid-area: screens-desc-container;
+
+        margin-top: -2rem;
+        .img-desc {
+            font-size: 0.85em;
+        }
+    }
+
+    .fullscreen {
+        grid-area: fullscreen;
+
+        margin-top: -2rem;
+
+        a {
+            margin: 0;
+            color: #888;
+        }
     }
 
     .screens-img-b {
@@ -161,7 +177,6 @@
     }
 
 
-
     @media only screen and (max-width: 900px) {
         .container {
           grid-row-gap: 1em;
@@ -221,8 +236,9 @@
         }
 
         .img-desc {
-          margin-top: 1em;
+
           font-size: 0.65em;
         }
+
     } // media query
 } // page styling wrapper

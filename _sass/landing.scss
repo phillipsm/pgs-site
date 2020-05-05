@@ -13,6 +13,7 @@ landing page styling
     "intro-text intro-text intro-text . . ."
     ". . . . . ."
     "svc-img svc-img svc-img svc-img svc-img svc-img"
+    "fullscreen-link-container fullscreen-link-container fullscreen-link-container fullscreen-link-container fullscreen-link-container fullscreen-link-container"
     "svc-title svc-desc svc-desc . . ."
     ". . . . . ."
     "goods-img goods-img goods-img goods-img goods-img goods-img"
@@ -26,12 +27,32 @@ landing page styling
 .svc-img {
     grid-area: svc-img;
 }
+
+.fullscreen-link-container {
+    grid-area: fullscreen-link-container;
+    justify-self: end;
+    margin-top: -2rem;
+}
+
+.img-desc {
+  color: #888;
+  font-size: 0.85em;
+}
+
+.fullscreen-link-container {
+    a, a:link, a:hover, a:active, a:visited, a:focus {
+      color: #888;
+    }
+}
+
 .svc-title {
     grid-area: svc-title;
+    margin-top: -3rem;
 }
 
 .svc-desc {
     grid-area: svc-desc;
+    margin-top: -3rem;
 }
 
 .goods-img {
@@ -50,7 +71,10 @@ landing page styling
     .container {
         grid-row-gap: 1em;
         grid-template-areas:
+            ". . . . . ."
             "intro-text intro-text intro-text intro-text intro-text intro-text"
+            ". . . . . ."
+            ". . . . . ."
             ". . . . . ."
             ". . . . . ."
             "svc-img svc-img svc-img svc-img svc-img svc-img"
@@ -60,6 +84,34 @@ landing page styling
             ". . . . . ."
             ". . . . . ."
             "goods-img goods-img goods-img goods-img goods-img goods-img"
-            "goods-title goods-desc goods-desc goods-desc goods-desc goods-desc";
+            "goods-title goods-desc goods-desc goods-desc goods-desc goods-desc"
+            ". . . . . ."
+            ". . . . . ."
+            ". . . . . ."
+            ". . . . . .";
+
     }
+
+    .fullscreen-link-container {
+        display: none;
+    }
+
+    .svc-title {
+        grid-area: svc-title;
+        margin-top: 1rem;
+    }
+
+    .svc-desc {
+        grid-area: svc-desc;
+        margin-top: 1rem;
+    }
+
+    .goods-title {
+        margin-top: 1rem;
+    }
+
+    .goods-desc {
+        margin-top: 1rem;
+    }
+
 }
