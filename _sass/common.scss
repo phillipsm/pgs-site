@@ -82,6 +82,7 @@ p {
 .footer-logo {
     grid-area: footer-logo;
     align-self: end;
+    object-fit: none;
 }
 
 .btn {
