@@ -28,9 +28,8 @@
         ". . . . . ."
         ". . . . . ."
         "potential-text potential-text potential-text . . ."
-        ". . . . . ."
-        ". . . . . ."
-        "potential-img potential-img potential-img potential-desc potential-desc potential-desc"
+        "potential-img-a potential-img-a potential-img-a potential-desc potential-desc potential-desc"
+        "potential-img-b potential-img-b potential-img-b potential-desc potential-desc potential-desc"
         ". . . . . ."
         ". . . . . ."
         "prior-work-text prior-work-text prior-work-text . . ."
@@ -133,8 +132,12 @@
       grid-area: potential-desc;
     }
 
-    .potential-img {
-      grid-area: potential-img;
+    .potential-img-a {
+      grid-area: potential-img-a;
+    }
+
+    .potential-img-b {
+      grid-area: potential-img-b;
     }
 
     .prior-work-text {
@@ -235,7 +238,8 @@
             "potential-text potential-text"
             ". ."
             ". ."
-            "potential-img potential-img"
+            "potential-img-a potential-img-a"
+            "potential-img-b potential-img-b"
             ". ."
             "potential-desc potential-desc"
             ". ."
