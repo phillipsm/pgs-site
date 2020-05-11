@@ -82,7 +82,7 @@ const keep_moving_sketch = ( sketch ) => {
             sketch.setDimensions();
             sketch.resizeCanvas( sketch_width, sketch_height );
             x = 0;
-            y = sketch.random( 0, sketch_height );
+            y = sketch.random( sketch_height * .2, sketch_height * .3 );
             sketch.clear();
         }
 
