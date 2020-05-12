@@ -15,6 +15,13 @@
       "img-a img-a img-a img-a desc desc"
       "img-b img-b img-b img-b desc desc"
       "img-c img-c img-c img-c desc desc"
+      "img-d img-d img-d img-d desc desc"
+      "img-e img-e img-e img-e desc desc"
+      "img-f img-f img-f img-f desc desc"
+      "img-g img-g img-g img-g desc desc"
+      "img-h img-h img-h img-h desc desc"
+      "img-i img-i img-i img-i desc desc"
+      "img-j img-j img-j img-j desc desc";
     }
 
     .intro-text {
@@ -35,7 +42,60 @@
 
     .img-c {
         grid-area: img-c;
+
+        img {
+            max-width: 600px;
+        }
     }
+
+    .img-d {
+        grid-area: img-d;
+    }
+
+    .img-e {
+        grid-area: img-e;
+    }
+
+    .img-f {
+        grid-area: img-f;
+    }
+
+    .img-g {
+        grid-area: img-g;
+    }
+
+    .img-h {
+        grid-area: img-h;
+
+        img {
+            border: 1px solid #ccc;
+            filter: drop-shadow(0 0 0.2em #ddd);
+        }
+    }
+
+    .img-i {
+        grid-area: img-i;
+    }
+
+    .img-j {
+        grid-area: img-j;
+    }
+
+    .resp-container {
+        position: relative;
+        overflow: hidden;
+        padding-top: 56.25%;
+    }
+
+    .resp-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
 
     @media only screen and (max-width: 900px) {
         .container {
@@ -49,6 +109,13 @@
           "img-a img-a"
           "img-b img-b"
           "img-c img-c"
+          "img-d img-d"
+          "img-e img-e"
+          "img-f img-f"
+          "img-g img-g"
+          "img-h img-h"
+          "img-i img-i"
+          "img-j img-j"
           ". ."
           "desc desc";
         }

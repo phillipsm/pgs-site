@@ -1,0 +1,108 @@
+.pattern-making {
+
+    .container {
+      max-width: 1100px;
+      display: grid;
+      grid-column-gap: 2em;
+      grid-row-gap: 2em;
+      background-color: #fff;
+      margin: 0 auto;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-areas:
+      "intro-text intro-text intro-text . . ."
+      ". . . . . ."
+      ". . . . . ."
+      "img-a img-a img-a img-a desc desc"
+      "img-a-desc-container img-a-desc-container fullscreen-a fullscreen-a desc desc"
+      "img-b img-b img-b img-b desc desc"
+      "img-b-desc-container img-b-desc-container fullscreen-b fullscreen-b desc desc";
+    }
+
+    .intro-text {
+        grid-area: intro-text;
+    }
+
+    .desc {
+        grid-area: desc;
+    }
+
+    .img-a {
+        grid-area: img-a;
+    }
+
+    .img-b {
+        grid-area: img-b;
+    }
+
+    .img-a-desc-container {
+        grid-area: img-a-desc-container;
+    }
+
+    .img-b-desc-container {
+        grid-area: img-b-desc-container;
+    }
+
+    .fullscreen-a {
+        grid-area: fullscreen-a;
+    }
+
+    .fullscreen-b {
+        grid-area: fullscreen-b;
+    }
+
+    canvas {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      display: block;
+      background-color: #fff;
+      filter: drop-shadow(0 0 0.2em #ddd);
+    }
+
+    .fullscreen-a, .fullscreen-b {
+        margin-top: -2.5rem;
+
+        justify-self: end;
+        a {
+            margin: 0;
+            color: #888;
+        }
+    }
+
+    .img-a-desc-container, .img-b-desc-container {
+        margin-top: -2.5rem;
+
+        .img-desc {
+            font-size: 0.85em;
+        }
+    }
+
+    @media only screen and (max-width: 900px) {
+        .container {
+          grid-template-columns: repeat(2, 1fr);
+          grid-column-gap: 1em;
+          grid-row-gap: 1em;
+          grid-template-areas:
+          "intro-text intro-text"
+          ". ."
+          ". ."
+          "img-a img-a"
+          "img-a-desc-container fullscreen-a"
+          ". ."
+          "img-b img-b"
+          "img-b-desc-container fullscreen-b"
+          ". ."
+          "desc desc";
+        }
+
+        .fullscreen-a, .fullscreen-b {
+            margin-top: -1.5rem;
+
+        }
+
+        .img-a-desc-container, .img-b-desc-container {
+            margin-top: -1.5rem;
+        }
+    }
+
+}
