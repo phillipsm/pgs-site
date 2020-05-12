@@ -88,10 +88,20 @@
           ". ."
           "img-a img-a"
           "img-a-desc-container fullscreen-a"
+          ". ."
           "img-b img-b"
           "img-b-desc-container fullscreen-b"
           ". ."
           "desc desc";
+        }
+
+        .fullscreen-a, .fullscreen-b {
+            margin-top: -1.5rem;
+
+        }
+
+        .img-a-desc-container, .img-b-desc-container {
+            margin-top: -1.5rem;
         }
     }
 
