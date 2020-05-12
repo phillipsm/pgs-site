@@ -10,118 +10,21 @@
         "intro-text intro-text intro-text . . ."
         ". . . . . ."
         ". . . . . ."
-        "screens-img-a screens-img-a screens-img-a screens-img-a screens-desc screens-desc"
-        "screens-img-a screens-img-a screens-img-a screens-img-a screens-desc screens-desc"
-        "screens-a-desc-container screens-a-desc-container screens-a-desc-container fullscreen-a screens-desc screens-desc"
-        "screens-img-b screens-img-b screens-img-b screens-img-b screens-desc screens-desc"
-        "screens-img-b screens-img-b screens-img-b screens-img-b screens-desc screens-desc"
-        "screens-b-desc-container screens-b-desc-container screens-b-desc-container fullscreen-b screens-desc screens-desc"
+        "openbooth-proj-container openbooth-proj-container pattern-making-proj-container pattern-making-proj-container cam-proj-container cam-proj-container"
+        "frames-proj-container frames-proj-container awesome-box-proj-container awesome-box-proj-container ambient-timer-proj-container ambient-timer-proj-container"
+        "hovermarks-proj-container hovermarks-proj-container thelibrary-fm-timer-proj-container thelibrary-fm-timer-proj-container pyfav-proj-container pyfav-proj-container "
         ". . . . . ."
         ". . . . . ."
-        "ob-img-a ob-img-a ob-img-a ob-img-a ob-desc ob-desc"
-        "ob-img-b ob-img-b ob-img-b ob-img-b ob-desc ob-desc"
-        ". . . . . ."
-        ". . . . . ."
-        "p-img-a p-img-a p-img-a p-img-a p-desc p-desc"
-        "p-img-b p-img-b p-img-b p-img-b p-desc p-desc"
-        "p-img-c p-img-c p-img-c p-img-c p-desc p-desc"
         ". . . . . ."
         ". . . . . ."
         "potential-text potential-text potential-text . . ."
         "potential-img-a potential-img-a potential-img-a potential-desc potential-desc potential-desc"
-        "potential-img-b potential-img-b potential-img-b potential-desc potential-desc potential-desc"
         ". . . . . ."
-        ". . . . . ."
-        "prior-work-text prior-work-text prior-work-text . . ."
-        "cam-proj-container cam-proj-container frames-proj-container frames-proj-container ambient-timer-proj-container ambient-timer-proj-container"
-        "hovermarks-proj-container hovermarks-proj-container awesome-box-proj-container awesome-box-proj-container thelibrary-fm-timer-proj-container thelibrary-fm-timer-proj-container"
-        "pyfav-proj-container pyfav-proj-container . . . .";
+        ". . . . . .";
     }
 
     .intro-text {
       grid-area: intro-text;
-    }
-
-    canvas {
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-      display: block;
-      background-color: #fff;
-      filter: drop-shadow(0 0 0.2em #ddd);
-    }
-
-
-    .screens-desc {
-      grid-area: screens-desc;
-    }
-
-    .screens-img-a {
-      grid-area: screens-img-a;
-    }
-
-    .screens-a-desc-container {
-        grid-area: screens-a-desc-container;
-    }
-
-    .screens-b-desc-container {
-        grid-area: screens-b-desc-container;
-    }
-
-    .screens-a-desc-container, .screens-b-desc-container {
-        margin-top: -1.2rem;
-        .img-desc {
-            font-size: 0.85em;
-        }
-    }
-
-    .fullscreen-a {
-        grid-area: fullscreen-a;
-    }
-
-    .fullscreen-b {
-        grid-area: fullscreen-b;
-    }
-
-    .fullscreen-a, .fullscreen-b {
-        margin-top: -1.2rem;
-        justify-self: end;
-        a {
-            margin: 0;
-            color: #888;
-        }
-    }
-
-    .screens-img-b {
-      grid-area: screens-img-b;
-    }
-
-    .ob-desc {
-      grid-area: ob-desc;
-    }
-
-    .ob-img-a {
-      grid-area: ob-img-a;
-    }
-
-    .ob-img-b {
-      grid-area: ob-img-b;
-    }
-
-    .p-desc {
-      grid-area: p-desc;
-    }
-
-    .p-img-a {
-      grid-area: p-img-a;
-    }
-
-    .p-img-b {
-      grid-area: p-img-b;
-    }
-
-    .p-img-c {
-      grid-area: p-img-c;
     }
 
     .potential-text {
@@ -136,16 +39,16 @@
       grid-area: potential-img-a;
     }
 
-    .potential-img-b {
-      grid-area: potential-img-b;
-    }
-
-    .prior-work-text {
-        grid-area: prior-work-text;
-    }
-
     .intro-text {
         grid-area: intro-text;
+    }
+
+    .openbooth-proj-container {
+        grid-area: openbooth-proj-container;
+    }
+
+    .pattern-making-proj-container {
+        grid-area: pattern-making-proj-container;
     }
 
     .cam-proj-container {
@@ -202,54 +105,9 @@
             "intro-text intro-text"
             ". ."
             ". ."
-            "screens-img-a screens-img-a"
-            "screens-a-desc-container screens-a-desc-container"
-            "screens-img-b screens-img-b"
-            "screens-b-desc-container screens-b-desc-container"
+            "openbooth-proj-container openbooth-proj-container"
             ". ."
-            "screens-desc screens-desc"
-            ". ."
-            ". ."
-            ". ."
-            ". ."
-            ". ."
-            ". ."
-            "ob-img-a ob-img-a"
-            "ob-img-b ob-img-b"
-            ". ."
-            "ob-desc ob-desc"
-            ". ."
-            ". ."
-            ". ."
-            ". ."
-            ". ."
-            ". ."
-            "p-img-a p-img-a"
-            "p-img-b p-img-b"
-            "p-img-c p-img-c"
-            ". ."
-            "p-desc p-desc"
-            ". ."
-            ". ."
-            ". ."
-            ". ."
-            ". ."
-            ". ."
-            "potential-text potential-text"
-            ". ."
-            ". ."
-            "potential-img-a potential-img-a"
-            "potential-img-b potential-img-b"
-            ". ."
-            "potential-desc potential-desc"
-            ". ."
-            ". ."
-            ". ."
-            ". ."
-            ". ."
-            ". ."
-            "prior-work-text prior-work-text"
-            ". ."
+            "pattern-making-proj-container pattern-making-proj-container"
             ". ."
             "cam-proj-container cam-proj-container"
             ". ."
@@ -263,7 +121,20 @@
             ". ."
             "thelibrary-fm-timer-proj-container thelibrary-fm-timer-proj-container"
             ". ."
-            "pyfav-proj-container pyfav-proj-container";
+            "pyfav-proj-container pyfav-proj-container"
+            ". ."
+            ". ."
+            ". ."
+            ". ."
+            "potential-text potential-text"
+            ". ."
+            "potential-img-a potential-img-a"
+            ". ."
+            "potential-desc potential-desc"
+            ". ."
+            ". ."
+            ". ."
+            ". .";
         }
 
         .img-desc {
