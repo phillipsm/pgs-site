@@ -16,7 +16,7 @@
       "solution-head solution-text solution-text solution-text ."
       ". solution-img solution-img solution-img solution-img"
       "process-head process-text process-text process-overview-img process-overview-img"
-      ". process-one-text process-one-text process-overview-img process-overview-img"
+      ". process-one-text process-one-text process-one-text ."
       ". process-one-img process-one-img process-one-img process-one-img "
       ". process-two-text process-two-text process-two-img process-two-img"
       ". process-three-text process-three-text process-three-text ."
@@ -24,7 +24,8 @@
       ". process-four-text process-four-text process-four-text ."
       ". process-four-img-a process-four-img-a process-four-img-b process-four-img-b"
       ". process-five-text process-five-text process-five-text ."
-      "post-process-head post-process-text post-process-text post-process-text ."
+      ". process-five-img process-five-img process-five-img process-five-img"
+      "post-process-head post-process-text post-process-text process-complete-img process-complete-img"
       "role-head role-text role-text role-text .";
     }
 
@@ -149,12 +150,21 @@
         grid-area: process-five-text;
     }
 
+    .process-five-img {
+        grid-area: process-five-img;
+    }
+
     .post-process-head {
         grid-area: post-process-head;
     }
 
     .post-process-text {
         grid-area: post-process-text;
+    }
+
+
+    .process-complete-img {
+      grid-area: process-complete-img;
     }
 
     .role-head {
@@ -170,6 +180,15 @@
         height: auto;
     }
 
+    video {
+      border: .05rem solid #cccccc;
+    }
+
+    .process-subtitle {
+      font-size: 1em;
+      margin-top: -1em;
+      font-family: 'Walsheim Medium', sans-serif;
+    }
 
     @media only screen and (max-width: 900px) {
 
