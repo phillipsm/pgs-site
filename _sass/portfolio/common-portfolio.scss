@@ -1,26 +1,5 @@
-.header {
-  max-width: 1100px;
-  border-bottom: .05rem solid #cccccc;
-  margin: 0 auto;
-
-  display: grid;
-  grid-column-gap: 2em;
-  grid-row-gap: 6em;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas:
-  "site-title main";
-}
-
-.site-title {
-    grid-area: site-title;
-    justify-self: left;
-    align-self: center;
-}
-
-.main {
-    grid-area: main;
-    justify-self: right;
-    align-self: center;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -28,15 +7,52 @@ body {
 }
 
 header {
-  position: fixed;
-  top: 0;
-  height: 3rem;
-  width: 100vw;
-  background-color: #ffffff;
-  opacity: 0.9;
+  max-width: 1100px;
+  display: grid;
+  grid-column-gap: 2em;
+  grid-row-gap: 6em;
+  background-color: #fff;
+  margin: 0 auto;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+  "site-title site-title site-title main-nav";
 }
 
-ul li {
-  display: inline;
-  margin-right: 1em;
+.site-title {
+  grid-area: site-title;
+  justify-self: left;
+  align-self: center;
+  font-family: 'Walsheim Medium', sans-serif;
+  font-size:2.8em;
+}
+
+.title {
+  font-family: 'Walsheim Medium', sans-serif;
+  font-size:1.8em;
+  margin-bottom: .4em;
+  margin-top: 2rem;
+}
+
+.main-nav {
+  grid-area: main-nav;
+  justify-self: right;
+  align-self: center;
+  margin-right: .5rem;
+
+  ul li {
+      padding-bottom: .5em;
+  }
+}
+
+
+@media only screen and (max-width: 900px) {
+
+  body {
+    font-size: 1.7rem;
+  }
+
+  header {
+    font-size: 1.2rem;
+  }
+
 }
