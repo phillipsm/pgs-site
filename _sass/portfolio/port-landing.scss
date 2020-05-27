@@ -20,6 +20,9 @@
         grid-area: intro-text;
     }
 
+    .work-text {
+          grid-area: work-text;
+    }
     .perma-tile {
         grid-area: perma-tile;
     }
@@ -49,20 +52,17 @@
     }
 
 
+    .title {
+        margin-bottom: 2rem;
+    }
+
     img {
         width: 100%;
         height: auto;
     }
 
-    video {
-      border: .05rem solid #cccccc;
-    }
 
-    .process-subtitle {
-      font-size: 1em;
-      margin-top: -1em;
-      font-family: 'Walsheim Medium', sans-serif;
-    }
+
 
     @media only screen and (max-width: 900px) {
 
@@ -73,31 +73,42 @@
             grid-template-areas:
             "about-img about-img"
             "intro-text intro-text"
+            "work-text work-text"
             "perma-tile perma-tile"
-            " algo-tile algo-tile"
+            "algo-tile algo-tile"
             "openbooth-tile openbooth-tile"
             "illustration-tile illustration-tile"
             "about-desc about-desc"
             "contact-desc contact-desc";
         }
 
-        .intro-text {
-            padding-top: 7rem;
+        .about-img {
+          margin-top: 8rem;
         }
 
-        .tile {
-          padding-top: 3rem;
+        .intro-text {
+            margin-top: 2rem;
         }
+
+        .section-title {
+          margin-top: 6rem;
+        }
+
 
         .tile-title {
           font-family: 'Walsheim Medium', sans-serif;
-          font-size: 1.3em;
-          margin-bottom: 0;
-          margin-top: .8rem;
+          font-size: 1.1em;
+          margin-bottom: 2rem;
+          margin-top: 2rem;
+        }
+
+        .tile {
+          margin-top: 4rem;
         }
 
         .tile-desc {
-          font-family: 'Walsheim Medium', sans-serif;
+          margin-top: 2rem;
+          margin-bottom: 0;
         }
 
     }
