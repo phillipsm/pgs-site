@@ -18,6 +18,7 @@
         gtag('js', new Date());
         gtag('config', 'UA-110979652-1');
     </script>
+
   </head>
   <body class="port-landing">
 
@@ -28,9 +29,9 @@
       <div class="main-nav">
         <nav>
             <ul>
-              <li><a href="/portfolio#work">Work</a></li>
-              <li><a href="/portfolio#about">About</a></li>
-              <li><a href="/portfolio#contact">Contact</a></li>
+              <li><a href="#work">Work</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
       </div>
@@ -43,8 +44,7 @@
             <p>I currently work as an independent consultant, but am seeking more - I want to join your focused, dynamic team and build wonderful things together.</p>
         </div>
 
-        <div class="work-text">
-          <a name="work"></a>
+        <div id="work" class="work-text">
           <p class="title section-title">Work</p>
           <p>Listed here, you'll find examples of work I've produced - a mix of sketches, wireframes, user research, visual assets, code and prototypes.</p>
         </div>
@@ -89,8 +89,7 @@
         </div>
 
 
-        <div class="about-desc">
-          <a name="about"></a>
+        <div id ="about" class="about-desc">
           <p class="title section-title">About</p>
           <p>I'm seeking to join a dynamic group of people working hard to solve a meaningful problem. I want to contribute through sketches, wireframes, user research, visual assets, code and prototypes.</p>
           <p>My name is Matthew Phillips and I founded Public Good Studio in 2017. PGS exists to make forward looking products for public good organizations. Especially libraries.</p>
@@ -108,8 +107,7 @@
             <img src="/assets/images/double-exposure-still-low-opacity.gif">
         </div>
 
-        <div class="contact-desc">
-          <a name="contact"></a>
+        <div id="contact" class="contact-desc">
           <p class="title section-title">Contact</p>
           <p>For collaborations, quotes and general inquiries.</p>
           <p>
@@ -126,5 +124,11 @@
         </div>
 
     </div>
+    <script src="/assets/js/vendor/smooth-scroll.polyfills.min.js"></script>
+
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+
   </body>
 </html>
